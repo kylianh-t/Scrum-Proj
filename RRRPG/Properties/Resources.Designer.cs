@@ -351,6 +351,16 @@ namespace RRRPG.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Img_Yoshi_Ready {
+            get {
+                object obj = ResourceManager.GetObject("Img_Yoshi_Ready", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
         /// </summary>
         internal static System.IO.UnmanagedMemoryStream Mus_Title_Bg_Music {
@@ -410,6 +420,15 @@ namespace RRRPG.Properties {
         internal static System.IO.UnmanagedMemoryStream Snd_Bender_OhMyGod {
             get {
                 return ResourceManager.GetStream("Snd_Bender_OhMyGod", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
+        /// </summary>
+        internal static System.IO.UnmanagedMemoryStream Snd_Koolaid_Intro {
+            get {
+                return ResourceManager.GetStream("Snd_Koolaid_Intro", resourceCulture);
             }
         }
         
