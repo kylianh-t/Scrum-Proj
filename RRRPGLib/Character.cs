@@ -214,13 +214,13 @@ public class Character {
       {ImgState.IDLE, Resources.GetObject("Img_Yoshi_Idle") as Bitmap },
       {ImgState.NO_WEAPON, Resources.GetObject("Img_Yoshi_NoWeapon") as Bitmap },
       {ImgState.READY, Resources.GetObject("Img_Wizard_Ready") as Bitmap },
-      {ImgState.KILL, Resources.GetObject("Img_Wizard_Kill") as Bitmap },
+      {ImgState.KILL, Resources.GetObject("Gif_Yoshi_Death") as Bitmap },
     };
     c.dialogMap = new() {
       {TalkState.TALK_SMACK, ("", null) },
       {TalkState.SAY_OW, ("", null) },
       {TalkState.BONED, ("", null) },
-      {TalkState.GUN_WENT_OFF, ("", null) },
+      {TalkState.GUN_WENT_OFF, ("", Resources.GetStream("Snd_Yoshi_Death")) },
       {TalkState.SURVIVED, ("", null) },
     };
     return c;
@@ -229,8 +229,8 @@ public class Character {
     Character c = new Character();
     c.Stats = new(luck: 0.0f, health: 100, reflex: 0.0f);
     c.imgMap = new() {
-      {ImgState.IDLE, Resources.GetObject("Img_Putin_Idle") as Bitmap },
-      {ImgState.NO_WEAPON, Resources.GetObject("Img_Putin_NoWeapon") as Bitmap },
+      {ImgState.IDLE, Resources.GetObject("IMG_Putin_Idle") as Bitmap },
+      {ImgState.NO_WEAPON, Resources.GetObject("IMG_Putin_NoWeapon") as Bitmap },
       {ImgState.READY, Resources.GetObject("Img_Wizard_Ready") as Bitmap },
       {ImgState.KILL, Resources.GetObject("Img_Wizard_Kill") as Bitmap },
     };

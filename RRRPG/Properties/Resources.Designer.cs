@@ -61,6 +61,16 @@ namespace RRRPG.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Gif_Yoshi_Death {
+            get {
+                object obj = ResourceManager.GetObject("Gif_Yoshi_Death", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Icon similar to (Icon).
         /// </summary>
         internal static System.Drawing.Icon Icon_Form_Header {
@@ -183,6 +193,26 @@ namespace RRRPG.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Img_Koolaid_Idle {
+            get {
+                object obj = ResourceManager.GetObject("Img_Koolaid_Idle", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Img_Koolaid_NoWeapon {
+            get {
+                object obj = ResourceManager.GetObject("Img_Koolaid_NoWeapon", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Img_Magic_Wand {
             get {
                 object obj = ResourceManager.GetObject("Img_Magic_Wand", resourceCulture);
@@ -196,6 +226,26 @@ namespace RRRPG.Properties {
         internal static System.Drawing.Bitmap Img_Nerf_Revolver {
             get {
                 object obj = ResourceManager.GetObject("Img_Nerf_Revolver", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap IMG_Putin_Idle {
+            get {
+                object obj = ResourceManager.GetObject("IMG_Putin_Idle", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap IMG_Putin_NoWeapon {
+            get {
+                object obj = ResourceManager.GetObject("IMG_Putin_NoWeapon", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -286,6 +336,16 @@ namespace RRRPG.Properties {
         internal static System.Drawing.Bitmap Img_Yoshi_Idle {
             get {
                 object obj = ResourceManager.GetObject("Img_Yoshi_Idle", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Img_Yoshi_NoWeapon {
+            get {
+                object obj = ResourceManager.GetObject("Img_Yoshi_NoWeapon", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
