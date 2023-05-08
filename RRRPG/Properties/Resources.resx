@@ -226,4 +226,10 @@
   <data name="Snd_Bender_OhMyGod" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\data\audio\snd_bender_ohmygod.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
+  <data name="Snd_Yoshi_Death" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Data\Audio\Snd_Yoshi_Death.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="Snd_Yoshi_Intro" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Data\Audio\Snd_Yoshi_Intro.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
 </root>

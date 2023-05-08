@@ -217,7 +217,7 @@ public class Character {
       {ImgState.KILL, Resources.GetObject("Gif_Yoshi_Death") as Bitmap },
     };
     c.dialogMap = new() {
-      {TalkState.TALK_SMACK, ("", null) },
+      {TalkState.TALK_SMACK, ("", Resources.GetStream("Snd_Yoshi_Intro")) },
       {TalkState.SAY_OW, ("", null) },
       {TalkState.BONED, ("", null) },
       {TalkState.GUN_WENT_OFF, ("", Resources.GetStream("Snd_Yoshi_Death")) },

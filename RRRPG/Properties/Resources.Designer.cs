@@ -412,5 +412,23 @@ namespace RRRPG.Properties {
                 return ResourceManager.GetStream("Snd_Bender_OhMyGod", resourceCulture);
             }
         }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
+        /// </summary>
+        internal static System.IO.UnmanagedMemoryStream Snd_Yoshi_Death {
+            get {
+                return ResourceManager.GetStream("Snd_Yoshi_Death", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
+        /// </summary>
+        internal static System.IO.UnmanagedMemoryStream Snd_Yoshi_Intro {
+            get {
+                return ResourceManager.GetStream("Snd_Yoshi_Intro", resourceCulture);
+            }
+        }
     }
 }
