@@ -262,7 +262,7 @@ public class Character {
     return c;
   }
 
-  private static Character MakeMagicWandPlayer() {
+  public static Character MakeMagicWandPlayer() {
     Character c = new Character();
     c.Stats = new(luck: 0.5f, health: 100, reflex: 0.3f);
     c.imgMap = new() {

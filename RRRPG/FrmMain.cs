@@ -1,11 +1,15 @@
 using RRRPG.Properties;
 using RRRPGLib;
+using System.Drawing.Text;
 using System.Media;
+using System.Windows.Forms;
+//using CharacterStats = RRRPGLib.Character;
 
 namespace RRRPG
 {
     public partial class FrmMain : Form
     {
+        public int Myscore = 0;
         private SoundPlayer soundPlayer;
         private int state;
         private Character player;
@@ -50,6 +54,7 @@ namespace RRRPG
             tmrStateMachine.Enabled = true;
             state = 0;
             panWeaponSelect.Visible = false;
+            Shop.Visible = false;
         }
 
         private void tmrDialog_Tick(object sender, EventArgs e)
@@ -80,10 +85,12 @@ namespace RRRPG
             {
                 player.SayBoned();
                 btnStart.Visible = true;
+                Shop.Visible = true;
                 tmrPlayMusicAfterGameOver.Enabled = true;
                 panWeaponSelect.Visible = true;
                 state = -1;
                 tmrStateMachine.Enabled = false;
+
             }
             else if (state == 5)
             {
@@ -110,28 +117,39 @@ namespace RRRPG
             }
             else if (state == 8)
             {
+
                 opponent.SayBoned();
                 btnStart.Visible = true;
+                Shop.Visible = true;
                 tmrPlayMusicAfterGameOver.Enabled = true;
                 panWeaponSelect.Visible = true;
                 state = -1;
                 tmrStateMachine.Enabled = false;
+                Myscore += 5;
+                //when bender's apponent dies, he gets 5 points
+                Score.Text = String.Format("{0}", Myscore);
             }
         }
 
         private void btnDoIt_Click(object sender, EventArgs e)
         {
+            Console.WriteLine(state);
             if (player.PullTrigger(weapon))
             {
                 state = 3;
                 tmrStateMachine.Interval = 2200;
                 tmrStateMachine.Enabled = true;
+
             }
             else
             {
                 state = 5;
                 tmrStateMachine.Interval = 1500;
                 tmrStateMachine.Enabled = true;
+                Myscore += 1;
+
+                //everytime bender doges a bullet he gets a point
+                Score.Text = String.Format("{0}", Myscore);
             }
             btnDoIt.Visible = false;
         }
@@ -192,5 +210,150 @@ namespace RRRPG
             }
             tmrPlayMusicAfterGameOver.Enabled = false;
         }
+
+        //opens the shop
+        private void button1_Click(object sender, EventArgs e)
+        {
+            btnStart.Visible = false;
+            Shop.Visible = false;
+            CloseShop.Visible = true;
+            label2.Visible = true;
+            label5.Visible = true;
+            label4.Visible = true;
+            button2.Visible = true;
+            button4.Visible = true;
+            label7.Visible = true;
+            label8.Visible = true;
+            label9.Visible = true;
+            button6.Visible = true;
+            label10.Visible = true;
+            label11.Visible = true;
+            label12.Visible = true;
+            label13.Visible = true;
+            label14.Visible = true;
+            label15.Visible = true;
+            GetStats(player);
+
+        }
+
+        private void CloseShop_Click(object sender, EventArgs e)
+        {
+            btnStart.Visible = true;
+            Shop.Visible = true;
+            CloseShop.Visible = false;
+            label2.Visible = false;
+            label5.Visible = false;
+            label4.Visible = false;
+            button2.Visible = false;
+            button4.Visible = false;
+            button6.Visible = false;
+            label10.Visible = false;
+            label11.Visible = false;
+            label12.Visible = false;
+            label13.Visible = false;
+            label14.Visible = false;
+            label15.Visible = false;
+            label7.Visible = false;
+            label8.Visible = false;
+            label9.Visible = false;
+        }
+
+        
+        public void GetStats(Character character)
+        {
+
+
+            float L = character.Stats.Luck;
+            float H = character.Stats.Health;
+            float R = character.Stats.Reflex;
+
+            label7.Text = string.Format("{0}%", Math.Floor(L * 100));
+            label8.Text = string.Format("{0}%", H);
+            label9.Text = string.Format("{0}%", Math.Floor(R * 100));
+
+            int L2 = (int)Math.Floor(L * 100);
+            int H2 = (int)Math.Floor(H);
+            int R2 = (int)Math.Floor(R * 100);
+
+            label13.Width = L2;
+            label14.Width = H2;
+            label15.Width = R2;
+
+            label13.BringToFront();
+            label14.BringToFront();
+            label15.BringToFront();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            //when the butten is clicked the change luck function is sent a value of .01 or 1%
+            if (Myscore >= 5)
+            {
+                ChangeLuck(player, (float).01);
+                GetStats(player);
+                Myscore -= 5;
+                Score.Text = String.Format("{0}", Myscore);
+                label13.Width += 1;
+            }
+            else
+            {
+                MessageBox.Show("you do not have enough points for that(you need 5)");
+            }
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            if (Myscore >= 5)
+            {
+                ChangeHealth(player, 1);
+                GetStats(player);
+                Myscore -= 5;
+                Score.Text = String.Format("{0}", Myscore);
+                label14.Width += 1;
+            }
+            else
+            {
+                MessageBox.Show("you do not have enough points for that(you need 5)");
+            }
+        }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+            if (Myscore >= 5)
+            {
+                ChangeReflex(player, (float).01);
+                GetStats(player);
+                Myscore -= 5;
+                Score.Text = String.Format("{0}", Myscore);
+                label15.Width += 1;
+            }
+            else
+            {
+                MessageBox.Show("you do not have enough points for that(you need 5)");
+            }
+        }
+
+
+        //these functions below are used when the plus button are clicked to help update the stats
+        public void ChangeLuck(Character character, float X)
+        {
+
+            //adds the .01 luck value to the player object
+            float L = player.Stats.Luck += X;
+        }
+        public void ChangeHealth(Character character, int X)
+        {
+
+            //adds the .01 luck value to the player object
+            int L = player.Stats.Health += X;
+        }
+        public void ChangeReflex(Character character, float X)
+        {
+
+            //adds the .01 luck value to the player object
+            float L = player.Stats.Reflex += X;
+        }
+
+       
     }
 }
