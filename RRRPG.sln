@@ -5,7 +5,7 @@ VisualStudioVersion = 17.4.33213.308
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RRRPG", "RRRPG\RRRPG.csproj", "{EB0A3177-D655-4FBE-9D7A-C8BF6DDB0D18}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RRRPGLib", "RRRPGLib\RRRPGLib.csproj", "{5991EF54-F7E8-4608-91D5-F0D38E626C25}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RRRPGLib", "RRRPGLib\RRRPGLib.csproj", "{5991EF54-F7E8-4608-91D5-F0D38E626C25}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
