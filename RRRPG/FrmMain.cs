@@ -29,6 +29,14 @@ namespace RRRPG
             btnDoIt.Visible = false;
             lblOpponentSpeak.Visible = false;
             lblPlayerSpeak.Visible = false;
+            picWeaponSelectBow.Visible = false;
+            picWeaponSelectCorkGun.Visible = false;
+            picWeaponSelectWaterGun.Visible = false;
+            picWeaponSelectNerfRev.Visible = false;
+            lblWeaponSelectBow.Visible = false;
+            lblWeaponSelectCorkGun.Visible = false;
+            lblWeaponSelectWaterGun.Visible = false;
+            lblWeaponSelectNerfRev.Visible = false;
             weapon = Weapon.MakeWeapon(WeaponType.MAGIC_WAND);
             state = -1;
             weaponSelectMap = new() {
@@ -54,6 +62,7 @@ namespace RRRPG
             tmrStateMachine.Interval = 3500;
             tmrStateMachine.Enabled = true;
             state = 0;
+            numofgames++;
             panWeaponSelect.Visible = false;
         }
 
@@ -89,6 +98,26 @@ namespace RRRPG
                 panWeaponSelect.Visible = true;
                 state = -1;
                 tmrStateMachine.Enabled = false;
+                if (numofgames > 0)
+                {
+                    picWeaponSelectCorkGun.Visible = true;
+                    lblWeaponSelectCorkGun.Visible = true;
+                }
+                if (numofgames > 1)
+                {
+                    picWeaponSelectWaterGun.Visible = true;
+                    lblWeaponSelectWaterGun.Visible = true;
+                }
+                if (numofgames > 2)
+                {
+                    picWeaponSelectNerfRev.Visible = true;
+                    lblWeaponSelectNerfRev.Visible = true;
+                }
+                if (numofgames > 3)
+                {
+                    picWeaponSelectBow.Visible = true;
+                    lblWeaponSelectBow.Visible = true;
+                }
             }
             else if (state == 5)
             {
@@ -121,6 +150,26 @@ namespace RRRPG
                 panWeaponSelect.Visible = true;
                 state = -1;
                 tmrStateMachine.Enabled = false;
+                if (numofgames > 0)
+                {
+                    picWeaponSelectCorkGun.Visible = true;
+                    lblWeaponSelectCorkGun.Visible = true;
+                }
+                if (numofgames > 1)
+                {
+                    picWeaponSelectWaterGun.Visible = true;
+                    lblWeaponSelectWaterGun.Visible = true;
+                }
+                if (numofgames > 2)
+                {
+                    picWeaponSelectNerfRev.Visible = true;
+                    lblWeaponSelectNerfRev.Visible = true;
+                }
+                if (numofgames > 3)
+                {
+                    picWeaponSelectBow.Visible = true;
+                    lblWeaponSelectBow.Visible = true;
+                }
             }
         }
 
@@ -196,6 +245,40 @@ namespace RRRPG
                 soundPlayer.PlayLooping();
             }
             tmrPlayMusicAfterGameOver.Enabled = false;
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+            int randIndex;
+            if (numofgames < 5)
+            {
+                randIndex = rnd.Next(numofgames + 1);
+            }
+            else
+            {
+                randIndex = rnd.Next(5);
+            }
+            switch (randIndex)
+            {
+                case 0:
+                    SelectWeapon(WeaponType.MAGIC_WAND);
+                    break;
+                case 1:
+                    SelectWeapon(WeaponType.CORK_GUN);
+                    break;
+                case 2:
+                    SelectWeapon(WeaponType.WATER_GUN);
+                    break;
+                case 3:
+                    SelectWeapon(WeaponType.NERF_REVOLVER);
+                    break;
+                case 4:
+                    SelectWeapon(WeaponType.BOW);
+                    break;
+                default:
+                    SelectWeapon(WeaponType.MAGIC_WAND);
+                    break;
+            }
         }
     }
 }
