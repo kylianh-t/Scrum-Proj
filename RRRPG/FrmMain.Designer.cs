@@ -52,6 +52,26 @@
             lblPlayerSpeak = new Label();
             tmrStateMachine = new System.Windows.Forms.Timer(components);
             tmrPlayMusicAfterGameOver = new System.Windows.Forms.Timer(components);
+            label1 = new Label();
+            Score = new Label();
+            Shop = new Button();
+            CloseShop = new Button();
+            button2 = new Button();
+            button4 = new Button();
+            button6 = new Button();
+            label2 = new Label();
+            label4 = new Label();
+            label5 = new Label();
+            label6 = new Label();
+            label7 = new Label();
+            label8 = new Label();
+            label9 = new Label();
+            label10 = new Label();
+            label11 = new Label();
+            label12 = new Label();
+            label13 = new Label();
+            label14 = new Label();
+            label15 = new Label();
             ((System.ComponentModel.ISupportInitialize)picOpponent).BeginInit();
             ((System.ComponentModel.ISupportInitialize)picPlayer).BeginInit();
             ((System.ComponentModel.ISupportInitialize)picWeaponSelectMagicWand).BeginInit();
@@ -308,12 +328,278 @@
             tmrPlayMusicAfterGameOver.Interval = 2000;
             tmrPlayMusicAfterGameOver.Tick += tmrPlayMusicAfterGameOver_Tick;
             // 
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.BackColor = Color.Transparent;
+            label1.Font = new Font("Segoe UI", 18F, FontStyle.Bold, GraphicsUnit.Point);
+            label1.ForeColor = SystemColors.ButtonFace;
+            label1.Location = new Point(173, 16);
+            label1.Name = "label1";
+            label1.Size = new Size(84, 32);
+            label1.TabIndex = 12;
+            label1.Text = "Score:";
+            // 
+            // Score
+            // 
+            Score.AutoSize = true;
+            Score.BackColor = Color.Transparent;
+            Score.Font = new Font("Segoe UI", 18F, FontStyle.Bold, GraphicsUnit.Point);
+            Score.ForeColor = Color.White;
+            Score.Location = new Point(250, 16);
+            Score.MinimumSize = new Size(100, 0);
+            Score.Name = "Score";
+            Score.Size = new Size(100, 32);
+            Score.TabIndex = 13;
+            Score.Text = "0";
+            
+            // 
+            // Shop
+            // 
+            Shop.Font = new Font("Segoe UI", 26.25F, FontStyle.Bold, GraphicsUnit.Point);
+            Shop.Location = new Point(12, 768);
+            Shop.Name = "Shop";
+            Shop.Size = new Size(194, 70);
+            Shop.TabIndex = 14;
+            Shop.Text = "Shop";
+            Shop.UseVisualStyleBackColor = true;
+            Shop.Click += button1_Click;
+            // 
+            // CloseShop
+            // 
+            CloseShop.Font = new Font("Segoe UI", 20F, FontStyle.Bold, GraphicsUnit.Point);
+            CloseShop.Location = new Point(156, 808);
+            CloseShop.Name = "CloseShop";
+            CloseShop.Size = new Size(194, 70);
+            CloseShop.TabIndex = 15;
+            CloseShop.Text = "Close Shop";
+            CloseShop.UseVisualStyleBackColor = true;
+            CloseShop.Visible = false;
+            CloseShop.Click += CloseShop_Click;
+            // 
+            // button2
+            // 
+            button2.Font = new Font("Segoe UI", 10F, FontStyle.Bold, GraphicsUnit.Point);
+            button2.Location = new Point(380, 695);
+            button2.Name = "button2";
+            button2.Size = new Size(29, 32);
+            button2.TabIndex = 17;
+            button2.Text = "+";
+            button2.UseVisualStyleBackColor = true;
+            button2.Visible = false;
+            button2.Click += button2_Click;
+            // 
+            // button4
+            // 
+            button4.Font = new Font("Segoe UI", 10F, FontStyle.Bold, GraphicsUnit.Point);
+            button4.Location = new Point(380, 732);
+            button4.Name = "button4";
+            button4.Size = new Size(29, 32);
+            button4.TabIndex = 19;
+            button4.Text = "+";
+            button4.UseVisualStyleBackColor = true;
+            button4.Visible = false;
+            button4.Click += button4_Click;
+            // 
+            // button6
+            // 
+            button6.Font = new Font("Segoe UI", 10F, FontStyle.Bold, GraphicsUnit.Point);
+            button6.Location = new Point(380, 766);
+            button6.Name = "button6";
+            button6.Size = new Size(29, 32);
+            button6.TabIndex = 21;
+            button6.Text = "+";
+            button6.UseVisualStyleBackColor = true;
+            button6.Visible = false;
+            button6.Click += button6_Click;
+            // 
+            // label2
+            // 
+            label2.AutoSize = true;
+            label2.BackColor = Color.White;
+            label2.Font = new Font("Segoe UI", 18F, FontStyle.Bold, GraphicsUnit.Point);
+            label2.Location = new Point(12, 695);
+            label2.Name = "label2";
+            label2.Size = new Size(66, 32);
+            label2.TabIndex = 22;
+            label2.Text = "Luck";
+            label2.Visible = false;
+            
+            // 
+            // label4
+            // 
+            label4.AutoSize = true;
+            label4.BackColor = Color.White;
+            label4.Font = new Font("Segoe UI", 18F, FontStyle.Bold, GraphicsUnit.Point);
+            label4.Location = new Point(12, 730);
+            label4.Name = "label4";
+            label4.Size = new Size(88, 32);
+            label4.TabIndex = 23;
+            label4.Text = "Health";
+            label4.Visible = false;
+            
+            // 
+            // label5
+            // 
+            label5.AutoSize = true;
+            label5.BackColor = Color.White;
+            label5.Font = new Font("Segoe UI", 18F, FontStyle.Bold, GraphicsUnit.Point);
+            label5.Location = new Point(12, 766);
+            label5.Name = "label5";
+            label5.Size = new Size(84, 32);
+            label5.TabIndex = 24;
+            label5.Text = "Reflex";
+            label5.Visible = false;
+            
+            // 
+            // label6
+            // 
+            label6.AutoSize = true;
+            label6.Location = new Point(434, 744);
+            label6.Name = "label6";
+            label6.Size = new Size(38, 15);
+            label6.TabIndex = 25;
+            label6.Text = "label6";
+            // 
+            // label7
+            // 
+            label7.BackColor = Color.White;
+            label7.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            label7.Location = new Point(106, 695);
+            label7.MinimumSize = new Size(50, 0);
+            label7.Name = "label7";
+            label7.Size = new Size(50, 32);
+            label7.TabIndex = 26;
+            label7.Text = "Stats";
+            label7.TextAlign = ContentAlignment.MiddleLeft;
+            label7.Visible = false;
+            
+            // 
+            // label8
+            // 
+            label8.BackColor = Color.White;
+            label8.Font = new Font("Segoe UI", 10F, FontStyle.Bold, GraphicsUnit.Point);
+            label8.Location = new Point(106, 730);
+            label8.MinimumSize = new Size(50, 0);
+            label8.Name = "label8";
+            label8.Size = new Size(50, 32);
+            label8.TabIndex = 27;
+            label8.Text = "Stats";
+            label8.TextAlign = ContentAlignment.MiddleLeft;
+            label8.Visible = false;
+            
+            // 
+            // label9
+            // 
+            label9.BackColor = Color.White;
+            label9.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            label9.Location = new Point(106, 768);
+            label9.MinimumSize = new Size(50, 0);
+            label9.Name = "label9";
+            label9.Size = new Size(50, 32);
+            label9.TabIndex = 28;
+            label9.Text = "Stats";
+            label9.TextAlign = ContentAlignment.MiddleLeft;
+            label9.Visible = false;
+            // 
+            // label10
+            // 
+            label10.AutoSize = true;
+            label10.BackColor = Color.DimGray;
+            label10.Location = new Point(161, 695);
+            label10.MinimumSize = new Size(200, 32);
+            label10.Name = "label10";
+            label10.Size = new Size(200, 32);
+            label10.TabIndex = 29;
+            label10.Visible = false;
+            
+            // 
+            // label11
+            // 
+            label11.AutoSize = true;
+            label11.BackColor = Color.DimGray;
+            label11.Location = new Point(161, 766);
+            label11.MinimumSize = new Size(200, 32);
+            label11.Name = "label11";
+            label11.Size = new Size(200, 32);
+            label11.TabIndex = 30;
+            label11.Visible = false;
+            
+            // 
+            // label12
+            // 
+            label12.AutoSize = true;
+            label12.BackColor = Color.DimGray;
+            label12.Location = new Point(161, 729);
+            label12.MinimumSize = new Size(200, 32);
+            label12.Name = "label12";
+            label12.Size = new Size(200, 32);
+            label12.TabIndex = 31;
+            label12.Visible = false;
+            
+            // 
+            // label13
+            // 
+            label13.BackColor = Color.White;
+            label13.Location = new Point(161, 695);
+            label13.MaximumSize = new Size(200, 32);
+            label13.MinimumSize = new Size(0, 32);
+            label13.Name = "label13";
+            label13.Size = new Size(10, 32);
+            label13.TabIndex = 32;
+            label13.Visible = false;
+            
+            // 
+            // label14
+            // 
+            label14.BackColor = Color.White;
+            label14.Location = new Point(161, 730);
+            label14.MaximumSize = new Size(200, 32);
+            label14.MinimumSize = new Size(0, 32);
+            label14.Name = "label14";
+            label14.Size = new Size(10, 32);
+            label14.TabIndex = 33;
+            label14.Visible = false;
+            
+            // 
+            // label15
+            // 
+            label15.BackColor = Color.White;
+            label15.Location = new Point(161, 767);
+            label15.MaximumSize = new Size(200, 32);
+            label15.MinimumSize = new Size(0, 32);
+            label15.Name = "label15";
+            label15.Size = new Size(10, 32);
+            label15.TabIndex = 34;
+            label15.Visible = false;
+            
+            // 
             // FrmMain
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.Black;
             ClientSize = new Size(1085, 887);
+            Controls.Add(label13);
+            Controls.Add(label14);
+            Controls.Add(label15);
+            Controls.Add(label12);
+            Controls.Add(label11);
+            Controls.Add(label10);
+            Controls.Add(label9);
+            Controls.Add(label8);
+            Controls.Add(label7);
+            Controls.Add(label6);
+            Controls.Add(label5);
+            Controls.Add(label4);
+            Controls.Add(label2);
+            Controls.Add(button6);
+            Controls.Add(button4);
+            Controls.Add(button2);
+            Controls.Add(CloseShop);
+            Controls.Add(Shop);
+            Controls.Add(Score);
+            Controls.Add(label1);
             Controls.Add(lblPlayerSpeak);
             Controls.Add(lblOpponentSpeak);
             Controls.Add(btnStart);
@@ -365,5 +651,25 @@
         private Label lblWeaponSelectNerfRev;
         private PictureBox picWeaponSelectNerfRev;
         private System.Windows.Forms.Timer tmrPlayMusicAfterGameOver;
+        private Label label1;
+        private Label Score;
+        private Button Shop;
+        private Button CloseShop;
+        private Button button2;
+        private Button button4;
+        private Button button6;
+        private Label label2;
+        private Label label4;
+        private Label label5;
+        private Label label6;
+        private Label label7;
+        private Label label8;
+        private Label label9;
+        private Label label10;
+        private Label label11;
+        private Label label12;
+        private Label label13;
+        private Label label14;
+        private Label label15;
     }
 }
