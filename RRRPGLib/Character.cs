@@ -61,6 +61,7 @@ public class Character {
       WeaponType.BOW => MakeBowOpponent(),
       WeaponType.CORK_GUN => MakeCorkGunOpponent(),
       WeaponType.WATER_GUN => MakeWaterGunOpponent(),
+      WeaponType.LIGHT_SABER => MakeWaterGunOpponent(),
     };
     c.pic = pic;
     c.lblTalk = lblTalk;
@@ -83,6 +84,7 @@ public class Character {
       WeaponType.BOW => MakeBowPlayer(),
       WeaponType.CORK_GUN => MakeCorkGunPlayer(),
       WeaponType.WATER_GUN => MakeWaterGunPlayer(),
+      WeaponType.LIGHT_SABER => MakeLightSaberPlayer(),
     };
     c.pic = pic;
     c.lblTalk = lblTalk;
@@ -261,8 +263,26 @@ public class Character {
     };
     return c;
   }
-
-  private static Character MakeMagicWandPlayer() {
+    private static Character MakeLightSaberOpponent()
+    {
+        Character c = new Character();
+        c.Stats = new(luck: 0.4f, health: 100, reflex: 0.5f);
+        c.imgMap = new() {
+      {ImgState.IDLE, Resources.GetObject("Img_Wizard_Idle") as Bitmap },
+      {ImgState.NO_WEAPON, Resources.GetObject("Img_Wizard_NoWeapon") as Bitmap },
+      {ImgState.READY, Resources.GetObject("Img_Wizard_Ready") as Bitmap },
+      {ImgState.KILL, Resources.GetObject("Img_Wizard_Kill") as Bitmap },
+    };
+        c.dialogMap = new() {
+      {TalkState.TALK_SMACK, ("I will outlast you!", null) },
+      {TalkState.SAY_OW, ("This hurts more than I thought!", null) },
+      {TalkState.BONED, ("That didn't go as planned", null) },
+      {TalkState.GUN_WENT_OFF, ("Well, that sucks!", null) },
+      {TalkState.SURVIVED, ("I knew I would live!", null) },
+    };
+        return c;
+    }
+    private static Character MakeMagicWandPlayer() {
     Character c = new Character();
     c.Stats = new(luck: 0.5f, health: 100, reflex: 0.3f);
     c.imgMap = new() {
@@ -352,6 +372,25 @@ public class Character {
     };
     return c;
   }
+
+  private static Character MakeLightSaberPlayer() {
+    Character c = new Character();
+    c.Stats = new(luck: 0.5f, health: 100, reflex: 0.3f);
+    c.imgMap = new() {
+      {ImgState.IDLE, Resources.GetObject("Img_Bender_Idle") as Bitmap },
+      {ImgState.NO_WEAPON, Resources.GetObject("Img_Bender_Idle") as Bitmap },
+      {ImgState.READY, Resources.GetObject("Img_Bender_Ready_WaterGun") as Bitmap },
+      {ImgState.KILL, Resources.GetObject("Img_Bender_Kill_WaterGun") as Bitmap },
+    };
+    c.dialogMap = new() {
+      {TalkState.TALK_SMACK, ("You look thirsty. Want some water?", null) },
+      {TalkState.SAY_OW, ("It's freezing!", null) },
+      {TalkState.BONED, ("Oh, I'm boned!", Resources.GetStream("Snd_Bender_ImBoned")) },
+      {TalkState.GUN_WENT_OFF, ("This might not be so bad", null) },
+      {TalkState.SURVIVED, ("Hahahaha!", Resources.GetStream("Snd_Bender_Laugh")) },
+    };
+    return c;
+  }  
   
   private void Say(string dialog) {
     Say((dialog, null));

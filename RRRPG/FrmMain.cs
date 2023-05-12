@@ -33,6 +33,8 @@ namespace RRRPG
             picWeaponSelectCorkGun.Visible = false;
             picWeaponSelectWaterGun.Visible = false;
             picWeaponSelectNerfRev.Visible = false;
+          //  picWeaponSelectLightSaber.Visible = false;
+            //lblWeaponSelectLightSaber.Visible = false;
             lblWeaponSelectBow.Visible = false;
             lblWeaponSelectCorkGun.Visible = false;
             lblWeaponSelectWaterGun.Visible = false;
@@ -45,6 +47,7 @@ namespace RRRPG
         {WeaponType.WATER_GUN, (picWeaponSelectWaterGun, lblWeaponSelectWaterGun) },
         {WeaponType.MAGIC_WAND, (picWeaponSelectMagicWand, lblWeaponSelectMagicWand) },
         {WeaponType.NERF_REVOLVER, (picWeaponSelectNerfRev, lblWeaponSelectNerfRev) },
+        {WeaponType.LIGHT_SABER, (picWeaponSelectLightSaber, lblWeaponSelectLightSaber) },
       };
             SelectWeapon(WeaponType.MAGIC_WAND);
         }
@@ -232,6 +235,11 @@ namespace RRRPG
             SelectWeapon(WeaponType.BOW);
         }
 
+        private void picWeaponSelectLightSaber_Click(object sender, EventArgs e)
+        {
+            SelectWeapon(WeaponType.LIGHT_SABER);
+        }
+
         private void FrmMain_FormClosed(object sender, FormClosedEventArgs e)
         {
             FormManager.openForms.Remove(this);
@@ -280,5 +288,7 @@ namespace RRRPG
                     break;
             }
         }
+
+       
     }
 }

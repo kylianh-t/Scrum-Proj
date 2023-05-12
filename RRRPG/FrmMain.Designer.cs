@@ -38,6 +38,10 @@
             picWeaponSelectMagicWand = new PictureBox();
             lblWeaponSelectMagicWand = new Label();
             panWeaponSelect = new Panel();
+            lblWeaponSelectLightSaber = new Label();
+            picWeaponSelectLightSaber = new PictureBox();
+            label1 = new Label();
+            pictureBox1 = new PictureBox();
             lblWeaponSelectBow = new Label();
             picWeaponSelectBow = new PictureBox();
             lblWeaponSelectNerfRev = new Label();
@@ -52,17 +56,16 @@
             lblPlayerSpeak = new Label();
             tmrStateMachine = new System.Windows.Forms.Timer(components);
             tmrPlayMusicAfterGameOver = new System.Windows.Forms.Timer(components);
-            pictureBox1 = new PictureBox();
-            label1 = new Label();
             ((System.ComponentModel.ISupportInitialize)picOpponent).BeginInit();
             ((System.ComponentModel.ISupportInitialize)picPlayer).BeginInit();
             ((System.ComponentModel.ISupportInitialize)picWeaponSelectMagicWand).BeginInit();
             panWeaponSelect.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)picWeaponSelectLightSaber).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)picWeaponSelectBow).BeginInit();
             ((System.ComponentModel.ISupportInitialize)picWeaponSelectNerfRev).BeginInit();
             ((System.ComponentModel.ISupportInitialize)picWeaponSelectWaterGun).BeginInit();
             ((System.ComponentModel.ISupportInitialize)picWeaponSelectCorkGun).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
             // 
             // picOpponent
@@ -144,6 +147,8 @@
             // panWeaponSelect
             // 
             panWeaponSelect.BackColor = Color.Black;
+            panWeaponSelect.Controls.Add(lblWeaponSelectLightSaber);
+            panWeaponSelect.Controls.Add(picWeaponSelectLightSaber);
             panWeaponSelect.Controls.Add(label1);
             panWeaponSelect.Controls.Add(pictureBox1);
             panWeaponSelect.Controls.Add(lblWeaponSelectBow);
@@ -162,13 +167,61 @@
             panWeaponSelect.Size = new Size(566, 229);
             panWeaponSelect.TabIndex = 7;
             // 
+            // lblWeaponSelectLightSaber
+            // 
+            lblWeaponSelectLightSaber.AutoSize = true;
+            lblWeaponSelectLightSaber.BackColor = Color.Black;
+            lblWeaponSelectLightSaber.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            lblWeaponSelectLightSaber.ForeColor = Color.White;
+            lblWeaponSelectLightSaber.Location = new Point(410, 165);
+            lblWeaponSelectLightSaber.Name = "lblWeaponSelectLightSaber";
+            lblWeaponSelectLightSaber.Size = new Size(92, 21);
+            lblWeaponSelectLightSaber.TabIndex = 19;
+            lblWeaponSelectLightSaber.Text = "LightSaber";
+            // 
+            // picWeaponSelectLightSaber
+            // 
+            picWeaponSelectLightSaber.BackColor = Color.Black;
+            picWeaponSelectLightSaber.BackgroundImage = (Image)resources.GetObject("picWeaponSelectLightSaber.BackgroundImage");
+            picWeaponSelectLightSaber.BackgroundImageLayout = ImageLayout.Zoom;
+            picWeaponSelectLightSaber.Location = new Point(415, 10);
+            picWeaponSelectLightSaber.Name = "picWeaponSelectLightSaber";
+            picWeaponSelectLightSaber.Size = new Size(61, 152);
+            picWeaponSelectLightSaber.TabIndex = 18;
+            picWeaponSelectLightSaber.TabStop = false;
+            picWeaponSelectLightSaber.Click += picWeaponSelectLightSaber_Click;
+            // 
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.BackColor = Color.Black;
+            label1.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            label1.ForeColor = Color.White;
+            label1.Location = new Point(487, 166);
+            label1.Name = "label1";
+            label1.Size = new Size(74, 21);
+            label1.TabIndex = 17;
+            label1.Text = "Random";
+            // 
+            // pictureBox1
+            // 
+            pictureBox1.BackColor = Color.Black;
+            pictureBox1.BackgroundImage = Properties.Resources.Img_Shadow_Idle;
+            pictureBox1.BackgroundImageLayout = ImageLayout.Zoom;
+            pictureBox1.Location = new Point(492, 11);
+            pictureBox1.Name = "pictureBox1";
+            pictureBox1.Size = new Size(61, 152);
+            pictureBox1.TabIndex = 16;
+            pictureBox1.TabStop = false;
+            pictureBox1.Click += pictureBox1_Click;
+            // 
             // lblWeaponSelectBow
             // 
             lblWeaponSelectBow.AutoSize = true;
             lblWeaponSelectBow.BackColor = Color.Black;
             lblWeaponSelectBow.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
             lblWeaponSelectBow.ForeColor = Color.White;
-            lblWeaponSelectBow.Location = new Point(397, 166);
+            lblWeaponSelectBow.Location = new Point(361, 166);
             lblWeaponSelectBow.Name = "lblWeaponSelectBow";
             lblWeaponSelectBow.Size = new Size(43, 21);
             lblWeaponSelectBow.TabIndex = 15;
@@ -179,7 +232,7 @@
             picWeaponSelectBow.BackColor = Color.Black;
             picWeaponSelectBow.BackgroundImage = Properties.Resources.Img_Bow;
             picWeaponSelectBow.BackgroundImageLayout = ImageLayout.Zoom;
-            picWeaponSelectBow.Location = new Point(379, 11);
+            picWeaponSelectBow.Location = new Point(343, 11);
             picWeaponSelectBow.Name = "picWeaponSelectBow";
             picWeaponSelectBow.Size = new Size(61, 152);
             picWeaponSelectBow.TabIndex = 14;
@@ -192,18 +245,18 @@
             lblWeaponSelectNerfRev.BackColor = Color.Black;
             lblWeaponSelectNerfRev.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
             lblWeaponSelectNerfRev.ForeColor = Color.White;
-            lblWeaponSelectNerfRev.Location = new Point(266, 166);
+            lblWeaponSelectNerfRev.Location = new Point(278, 166);
             lblWeaponSelectNerfRev.Name = "lblWeaponSelectNerfRev";
-            lblWeaponSelectNerfRev.Size = new Size(115, 21);
+            lblWeaponSelectNerfRev.Size = new Size(44, 21);
             lblWeaponSelectNerfRev.TabIndex = 13;
-            lblWeaponSelectNerfRev.Text = "Nerf Revolver";
+            lblWeaponSelectNerfRev.Text = "Nerf";
             // 
             // picWeaponSelectNerfRev
             // 
             picWeaponSelectNerfRev.BackColor = Color.Black;
             picWeaponSelectNerfRev.BackgroundImage = Properties.Resources.Img_Nerf_Revolver;
             picWeaponSelectNerfRev.BackgroundImageLayout = ImageLayout.Zoom;
-            picWeaponSelectNerfRev.Location = new Point(289, 11);
+            picWeaponSelectNerfRev.Location = new Point(268, 11);
             picWeaponSelectNerfRev.Name = "picWeaponSelectNerfRev";
             picWeaponSelectNerfRev.Size = new Size(61, 152);
             picWeaponSelectNerfRev.TabIndex = 12;
@@ -228,7 +281,7 @@
             lblWeaponSelectWaterGun.BackColor = Color.Black;
             lblWeaponSelectWaterGun.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
             lblWeaponSelectWaterGun.ForeColor = Color.White;
-            lblWeaponSelectWaterGun.Location = new Point(182, 165);
+            lblWeaponSelectWaterGun.Location = new Point(178, 165);
             lblWeaponSelectWaterGun.Name = "lblWeaponSelectWaterGun";
             lblWeaponSelectWaterGun.Size = new Size(90, 21);
             lblWeaponSelectWaterGun.TabIndex = 10;
@@ -240,7 +293,7 @@
             lblWeaponSelectCorkGun.BackColor = Color.Black;
             lblWeaponSelectCorkGun.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
             lblWeaponSelectCorkGun.ForeColor = Color.White;
-            lblWeaponSelectCorkGun.Location = new Point(105, 165);
+            lblWeaponSelectCorkGun.Location = new Point(99, 165);
             lblWeaponSelectCorkGun.Name = "lblWeaponSelectCorkGun";
             lblWeaponSelectCorkGun.Size = new Size(80, 21);
             lblWeaponSelectCorkGun.TabIndex = 9;
@@ -313,30 +366,6 @@
             tmrPlayMusicAfterGameOver.Interval = 2000;
             tmrPlayMusicAfterGameOver.Tick += tmrPlayMusicAfterGameOver_Tick;
             // 
-            // pictureBox1
-            // 
-            pictureBox1.BackColor = Color.Black;
-            pictureBox1.BackgroundImage = Properties.Resources.Img_Shadow_Idle;
-            pictureBox1.BackgroundImageLayout = ImageLayout.Zoom;
-            pictureBox1.Location = new Point(463, 11);
-            pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(61, 152);
-            pictureBox1.TabIndex = 16;
-            pictureBox1.TabStop = false;
-            pictureBox1.Click += pictureBox1_Click;
-            // 
-            // label1
-            // 
-            label1.AutoSize = true;
-            label1.BackColor = Color.Black;
-            label1.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
-            label1.ForeColor = Color.White;
-            label1.Location = new Point(458, 166);
-            label1.Name = "label1";
-            label1.Size = new Size(74, 21);
-            label1.TabIndex = 17;
-            label1.Text = "Random";
-            // 
             // FrmMain
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
@@ -362,11 +391,12 @@
             ((System.ComponentModel.ISupportInitialize)picWeaponSelectMagicWand).EndInit();
             panWeaponSelect.ResumeLayout(false);
             panWeaponSelect.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)picWeaponSelectLightSaber).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ((System.ComponentModel.ISupportInitialize)picWeaponSelectBow).EndInit();
             ((System.ComponentModel.ISupportInitialize)picWeaponSelectNerfRev).EndInit();
             ((System.ComponentModel.ISupportInitialize)picWeaponSelectWaterGun).EndInit();
             ((System.ComponentModel.ISupportInitialize)picWeaponSelectCorkGun).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -397,5 +427,7 @@
         private System.Windows.Forms.Timer tmrPlayMusicAfterGameOver;
         private Label label1;
         private PictureBox pictureBox1;
+        private Label lblWeaponSelectLightSaber;
+        private PictureBox picWeaponSelectLightSaber;
     }
 }

@@ -31,4 +31,10 @@ public enum WeaponType {
   /// The fire goblin carries this.
   /// </summary>
   WATER_GUN,
+
+  /// <summary>
+  ///NOTHING
+  /// Nothing
+  /// </summary>
+  LIGHT_SABER,
 }

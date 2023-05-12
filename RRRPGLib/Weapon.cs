@@ -163,7 +163,8 @@ public class Weapon {
       WeaponType.CORK_GUN => MakeCorkGun(),
       WeaponType.NERF_REVOLVER => MakeNerfRev(),
       WeaponType.MAGIC_WAND => MakeMagicWand(),
-      _ => null
+        WeaponType.LIGHT_SABER => MakeLightSaber(),
+        _ => null
     };
     return weapon;
   }
@@ -218,5 +219,14 @@ public class Weapon {
       damage: 100,
       velocity: 0.2f);
   }
-  #endregion
+    private static Weapon MakeLightSaber()
+    {
+        return new Weapon(
+          chambers: new List<bool>(5),
+          type: WeaponType.LIGHT_SABER,
+          chanceOfMisfire: 0.3f,
+          damage: 100,
+          velocity: 0.2f);
+    }
+    #endregion
 }
