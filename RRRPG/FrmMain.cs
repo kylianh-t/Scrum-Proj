@@ -33,8 +33,11 @@ namespace RRRPG
             picWeaponSelectCorkGun.Visible = false;
             picWeaponSelectWaterGun.Visible = false;
             picWeaponSelectNerfRev.Visible = false;
+// Updated upstream
           //  picWeaponSelectLightSaber.Visible = false;
             //lblWeaponSelectLightSaber.Visible = false;
+          //picWeaponSelectLightSaber.Visible = false;
+          //lblWeaponSelectLightSaber.Visible = false; Stashed changes
             lblWeaponSelectBow.Visible = false;
             lblWeaponSelectCorkGun.Visible = false;
             lblWeaponSelectWaterGun.Visible = false;
