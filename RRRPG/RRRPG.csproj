@@ -49,9 +49,6 @@
     <None Update="Data\Audio\Snd_Bender_OhMyGod.wav">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
-    <None Update="Data\Audio\Snd_Yoshi_Death.wav">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </None>
     <None Update="Data\Audio\Snd_Yoshi_Intro.wav">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>

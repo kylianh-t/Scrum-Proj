@@ -63,6 +63,46 @@ namespace RRRPG.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Gif_Koolaid_Ready {
+            get {
+                object obj = ResourceManager.GetObject("Gif_Koolaid_Ready", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Gif_Putin_Wall {
+            get {
+                object obj = ResourceManager.GetObject("Gif_Putin_Wall", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Gif_Spongebob_Death {
+            get {
+                object obj = ResourceManager.GetObject("Gif_Spongebob_Death", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Gif_Spongebob_Shot {
+            get {
+                object obj = ResourceManager.GetObject("Gif_Spongebob_Shot", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Gif_Yoshi_Death {
             get {
                 object obj = ResourceManager.GetObject("Gif_Yoshi_Death", resourceCulture);
@@ -143,6 +183,36 @@ namespace RRRPG.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Img_Bowser_Death {
+            get {
+                object obj = ResourceManager.GetObject("Img_Bowser_Death", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Img_Bowser_NoWeapon {
+            get {
+                object obj = ResourceManager.GetObject("Img_Bowser_NoWeapon", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Img_Bowser_Ready {
+            get {
+                object obj = ResourceManager.GetObject("Img_Bowser_Ready", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Img_Cork_Gun {
             get {
                 object obj = ResourceManager.GetObject("Img_Cork_Gun", resourceCulture);
@@ -193,6 +263,16 @@ namespace RRRPG.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Img_Koolaid_Death {
+            get {
+                object obj = ResourceManager.GetObject("Img_Koolaid_Death", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Img_Koolaid_Idle {
             get {
                 object obj = ResourceManager.GetObject("Img_Koolaid_Idle", resourceCulture);
@@ -216,6 +296,36 @@ namespace RRRPG.Properties {
         internal static System.Drawing.Bitmap Img_Magic_Wand {
             get {
                 object obj = ResourceManager.GetObject("Img_Magic_Wand", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Img_Neo_Death {
+            get {
+                object obj = ResourceManager.GetObject("Img_Neo_Death", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Img_Neo_NoWeapon {
+            get {
+                object obj = ResourceManager.GetObject("Img_Neo_NoWeapon", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Img_Neo_Ready {
+            get {
+                object obj = ResourceManager.GetObject("Img_Neo_Ready", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -253,9 +363,39 @@ namespace RRRPG.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap IMG_Putin_Ready {
+            get {
+                object obj = ResourceManager.GetObject("IMG_Putin_Ready", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Img_Shadow_Idle {
             get {
                 object obj = ResourceManager.GetObject("Img_Shadow_Idle", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Img_Spongebob_NoWeapon {
+            get {
+                object obj = ResourceManager.GetObject("Img_Spongebob_NoWeapon", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Img_Spongebob_Ready {
+            get {
+                object obj = ResourceManager.GetObject("Img_Spongebob_Ready", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -426,9 +566,153 @@ namespace RRRPG.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
         /// </summary>
+        internal static System.IO.UnmanagedMemoryStream Snd_Bender_OhMyGod1 {
+            get {
+                return ResourceManager.GetStream("Snd_Bender_OhMyGod1", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
+        /// </summary>
+        internal static System.IO.UnmanagedMemoryStream Snd_BowOff {
+            get {
+                return ResourceManager.GetStream("Snd_BowOff", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
+        /// </summary>
+        internal static System.IO.UnmanagedMemoryStream Snd_Bowser_LaughingIntro {
+            get {
+                return ResourceManager.GetStream("Snd_Bowser_LaughingIntro", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
+        /// </summary>
+        internal static System.IO.UnmanagedMemoryStream Snd_Bowser_LaughingSurvived {
+            get {
+                return ResourceManager.GetStream("Snd_Bowser_LaughingSurvived", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
+        /// </summary>
+        internal static System.IO.UnmanagedMemoryStream Snd_Bowser_Peaches {
+            get {
+                return ResourceManager.GetStream("Snd_Bowser_Peaches", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
+        /// </summary>
+        internal static System.IO.UnmanagedMemoryStream Snd_FireGoblin_Laugh {
+            get {
+                return ResourceManager.GetStream("Snd_FireGoblin_Laugh", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
+        /// </summary>
+        internal static System.IO.UnmanagedMemoryStream Snd_Gunshot {
+            get {
+                return ResourceManager.GetStream("Snd_Gunshot", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
+        /// </summary>
         internal static System.IO.UnmanagedMemoryStream Snd_Koolaid_Intro {
             get {
                 return ResourceManager.GetStream("Snd_Koolaid_Intro", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
+        /// </summary>
+        internal static System.IO.UnmanagedMemoryStream Snd_NeoDeath {
+            get {
+                return ResourceManager.GetStream("Snd_NeoDeath", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
+        /// </summary>
+        internal static System.IO.UnmanagedMemoryStream Snd_Putin_Bomb {
+            get {
+                return ResourceManager.GetStream("Snd_Putin_Bomb", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
+        /// </summary>
+        internal static System.IO.UnmanagedMemoryStream Snd_Putin_FU {
+            get {
+                return ResourceManager.GetStream("Snd_Putin_FU", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
+        /// </summary>
+        internal static System.IO.UnmanagedMemoryStream Snd_Putin_MotherRussia {
+            get {
+                return ResourceManager.GetStream("Snd_Putin_MotherRussia", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
+        /// </summary>
+        internal static System.IO.UnmanagedMemoryStream Snd_Spongebob_Laughing {
+            get {
+                return ResourceManager.GetStream("Snd_Spongebob_Laughing", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
+        /// </summary>
+        internal static System.IO.UnmanagedMemoryStream Snd_SpongeBob_Ready {
+            get {
+                return ResourceManager.GetStream("Snd_SpongeBob_Ready", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
+        /// </summary>
+        internal static System.IO.UnmanagedMemoryStream Snd_Spongebob_Shot {
+            get {
+                return ResourceManager.GetStream("Snd_Spongebob_Shot", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
+        /// </summary>
+        internal static System.IO.UnmanagedMemoryStream Snd_WandOff {
+            get {
+                return ResourceManager.GetStream("Snd_WandOff", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
+        /// </summary>
+        internal static System.IO.UnmanagedMemoryStream Snd_WaterGun {
+            get {
+                return ResourceManager.GetStream("Snd_WaterGun", resourceCulture);
             }
         }
         
@@ -447,6 +731,15 @@ namespace RRRPG.Properties {
         internal static System.IO.UnmanagedMemoryStream Snd_Yoshi_Intro {
             get {
                 return ResourceManager.GetStream("Snd_Yoshi_Intro", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
+        /// </summary>
+        internal static System.IO.UnmanagedMemoryStream Snd_Yoshi_mlem {
+            get {
+                return ResourceManager.GetStream("Snd_Yoshi_mlem", resourceCulture);
             }
         }
     }

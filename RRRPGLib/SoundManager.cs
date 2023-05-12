@@ -19,12 +19,10 @@ public static class SoundManager {
   /// </summary>
   /// <param name="ms">Use <see cref="ResourcesRef.Resources"/> and it's GetStream method to retrieve an audio stream to play</param>
   public static void Play(UnmanagedMemoryStream ms) {
-    try {
+
       sndPlayer.Stream = ms;
-      sndPlayer.Play();
+            if (ms.CanSeek) ms.Seek(0, System.IO.SeekOrigin.Begin);
+            sndPlayer.Play();
     }
-    catch {
-      // couldn't play sound, oh well
-    }
-  }
 }
+
