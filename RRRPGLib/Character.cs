@@ -201,8 +201,8 @@ public class Character {
     c.dialogMap = new() {
       {TalkState.TALK_SMACK, ("( ͡° ͜ʖ ͡°)", Resources.GetStream("Snd_Koolaid_Intro")) },
       {TalkState.SAY_OW, ("", null) },
-      {TalkState.BONED, ("", null) },
-      {TalkState.GUN_WENT_OFF, ("Ohhhhhh nooooooo", Resources.GetStream("Snd_Gunshot")) },
+      {TalkState.BONED, ("Ohhhhh nooooooooo", null) },
+      {TalkState.GUN_WENT_OFF, ("", Resources.GetStream("Snd_Koolaid_Death")) },
       {TalkState.SURVIVED, ("", Resources.GetStream("Snd_Koolaid_Intro")) },
     };
     return c;
@@ -320,17 +320,17 @@ public class Character {
     Character c = new Character();
     c.Stats = new(luck: 0.5f, health: 100, reflex: 0.3f);
     c.imgMap = new() {
-      {ImgState.IDLE, Resources.GetObject("Img_Spongebob_NoWeapon") as Bitmap },
-      {ImgState.NO_WEAPON, Resources.GetObject("Img_Spongebob_NoWeapon") as Bitmap },
-      {ImgState.READY, Resources.GetObject("Img_Spongebob_Ready") as Bitmap },
-      {ImgState.KILL, Resources.GetObject("Gif_Spongebob_Shot") as Bitmap },
+      {ImgState.IDLE, Resources.GetObject("Img_Stewie_Idle") as Bitmap },
+      {ImgState.NO_WEAPON, Resources.GetObject("Img_Stewie_Idle") as Bitmap },
+      {ImgState.READY, Resources.GetObject("Img_Stewie_Ready") as Bitmap },
+      {ImgState.KILL, Resources.GetObject("Img_Stewie_Death") as Bitmap },
     };
     c.dialogMap = new() {
-      {TalkState.TALK_SMACK, ("IM READY", Resources.GetStream("Snd_SpongeBob_Ready")) },
-      {TalkState.SAY_OW, ("", Resources.GetStream("Snd_Spongebob_Shot")) },
-      {TalkState.BONED, ("AAAAAAAAAAAAAAAAAA!", null) },
-      {TalkState.GUN_WENT_OFF, ("Oh Barnacles", Resources.GetStream("Snd_Gunshot")) },
-      {TalkState.SURVIVED, ("Hahahaha!", Resources.GetStream("Snd_Spongebob_Laughing")) },
+      {TalkState.TALK_SMACK, ("", Resources.GetStream("Snd_Stewie_Hey")) },
+      {TalkState.SAY_OW, ("", Resources.GetStream("Snd_Stewie_Shot")) },
+      {TalkState.BONED, ("AAAAAAAAAAAAAAAAAA!", Resources.GetStream("Snd_Stewie_Death")) },
+      {TalkState.GUN_WENT_OFF, ("", Resources.GetStream("Snd_Gunshot")) },
+      {TalkState.SURVIVED, ("I'm back for more", Resources.GetStream("Snd_Stewie_Hey")) },
     };
     return c;
   }
@@ -353,6 +353,29 @@ public class Character {
     return c;
   }
   
+  private static Character MakeSpatulaPlayer()
+    {
+        Character c = new Character();
+        c.Stats = new(luck: 0.3f, health: 100, reflex: 0.2f);
+        c.imgMap = new()
+        {
+            {ImgState.IDLE, Resources.GetObject("Img_Spongebob_NoWeapon") as Bitmap },
+            {ImgState.NO_WEAPON, Resources.GetObject("Img_Spongebob_NoWeapon") as Bitmap },
+            {ImgState.READY, Resources.GetObject("Img_Spongebob_Ready_Spatula") as Bitmap },
+            {ImgState.KILL, Resources.GetObject("Gif_Spongebob_Shot") as Bitmap },
+        };
+        c.dialogMap = new() {
+            {TalkState.TALK_SMACK, ("IM READY", Resources.GetStream("Snd_SpongeBob_Ready")) },
+            {TalkState.SAY_OW, ("", null) },
+            {TalkState.BONED, ("How could my trusty spatula betray me", null) },
+            {TalkState.GUN_WENT_OFF, ("Oh Barnacles", Resources.GetStream("Snd_Spongebob_Slap")) },
+            {TalkState.SURVIVED, ("Hahahaha!", Resources.GetStream("Snd_Spongebob_Laughing")) },
+        };
+        return c;
+
+    }
+
+
   private void Say(string dialog) {
     Say((dialog, null));
   }

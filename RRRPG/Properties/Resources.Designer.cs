@@ -393,9 +393,39 @@ namespace RRRPG.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Img_Spongebob_Ready {
+        internal static System.Drawing.Bitmap Img_Spongebob_Spatula_Ready {
             get {
-                object obj = ResourceManager.GetObject("Img_Spongebob_Ready", resourceCulture);
+                object obj = ResourceManager.GetObject("Img_Spongebob_Spatula_Ready", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Img_Stewie_Death {
+            get {
+                object obj = ResourceManager.GetObject("Img_Stewie_Death", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Img_Stewie_Idle {
+            get {
+                object obj = ResourceManager.GetObject("Img_Stewie_Idle", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Img_Stewie_Ready {
+            get {
+                object obj = ResourceManager.GetObject("Img_Stewie_Ready", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -629,6 +659,15 @@ namespace RRRPG.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
         /// </summary>
+        internal static System.IO.UnmanagedMemoryStream Snd_Koolaid_Death {
+            get {
+                return ResourceManager.GetStream("Snd_Koolaid_Death", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
+        /// </summary>
         internal static System.IO.UnmanagedMemoryStream Snd_Koolaid_Intro {
             get {
                 return ResourceManager.GetStream("Snd_Koolaid_Intro", resourceCulture);
@@ -695,6 +734,42 @@ namespace RRRPG.Properties {
         internal static System.IO.UnmanagedMemoryStream Snd_Spongebob_Shot {
             get {
                 return ResourceManager.GetStream("Snd_Spongebob_Shot", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
+        /// </summary>
+        internal static System.IO.UnmanagedMemoryStream Snd_Spongebob_Slap {
+            get {
+                return ResourceManager.GetStream("Snd_Spongebob_Slap", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
+        /// </summary>
+        internal static System.IO.UnmanagedMemoryStream Snd_Stewie_Death {
+            get {
+                return ResourceManager.GetStream("Snd_Stewie_Death", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
+        /// </summary>
+        internal static System.IO.UnmanagedMemoryStream Snd_Stewie_Hey {
+            get {
+                return ResourceManager.GetStream("Snd_Stewie_Hey", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
+        /// </summary>
+        internal static System.IO.UnmanagedMemoryStream Snd_Stewie_Shot {
+            get {
+                return ResourceManager.GetStream("Snd_Stewie_Shot", resourceCulture);
             }
         }
         

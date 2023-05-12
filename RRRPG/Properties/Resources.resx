@@ -217,8 +217,17 @@
   <data name="Img_Spongebob_NoWeapon" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Img_Spongebob_NoWeapon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Img_Spongebob_Ready" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Img_Spongebob_Ready.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Img_Spongebob_Spatula_Ready" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Img_Spongebob_Spatula_Ready.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Img_Stewie_Death" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Img_Stewie_Death.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Img_Stewie_Idle" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Img_Stewie_Idle.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Img_Stewie_Ready" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Img_Stewie_Ready.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Img_Title" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\data\images\img_title.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -292,6 +301,9 @@
   <data name="Snd_Gunshot" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Snd_Gunshot.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
+  <data name="Snd_Koolaid_Death" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Snd_Koolaid_Death.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
   <data name="Snd_Koolaid_Intro" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Snd_Koolaid_Intro.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
@@ -315,6 +327,18 @@
   </data>
   <data name="Snd_Spongebob_Shot" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Snd_Spongebob_Shot.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="Snd_Spongebob_Slap" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Snd_Spongebob_Slap.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="Snd_Stewie_Death" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Snd_Stewie_Death.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="Snd_Stewie_Hey" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Snd_Stewie_Hey.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="Snd_Stewie_Shot" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Snd_Stewie_Shot.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="Snd_WandOff" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Snd_WandOff.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
