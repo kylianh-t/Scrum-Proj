@@ -61,7 +61,7 @@ public class Character {
       WeaponType.BOW => MakeBowOpponent(),
       WeaponType.CORK_GUN => MakeCorkGunOpponent(),
       WeaponType.WATER_GUN => MakeWaterGunOpponent(),
-      WeaponType.LIGHT_SABER => MakeWaterGunOpponent(),
+      WeaponType.LIGHT_SABER => MakeLightSaberOpponent(),
     };
     c.pic = pic;
     c.lblTalk = lblTalk;
@@ -268,17 +268,17 @@ public class Character {
         Character c = new Character();
         c.Stats = new(luck: 0.4f, health: 100, reflex: 0.5f);
         c.imgMap = new() {
-      {ImgState.IDLE, Resources.GetObject("Img_Wizard_Idle") as Bitmap },
-      {ImgState.NO_WEAPON, Resources.GetObject("Img_Wizard_NoWeapon") as Bitmap },
-      {ImgState.READY, Resources.GetObject("Img_Wizard_Ready") as Bitmap },
-      {ImgState.KILL, Resources.GetObject("Img_Wizard_Kill") as Bitmap },
+      {ImgState.IDLE, Resources.GetObject("Img_Darth_Vader_Idle") as Bitmap },
+      {ImgState.NO_WEAPON, Resources.GetObject("Img_Darth_Vader_NoWeapon") as Bitmap },
+      {ImgState.READY, Resources.GetObject("Img_Darth_Vader_Ready") as Bitmap },
+      {ImgState.KILL, Resources.GetObject("Img_Darth_Vader_Kill") as Bitmap },
     };
         c.dialogMap = new() {
-      {TalkState.TALK_SMACK, ("I will outlast you!", null) },
-      {TalkState.SAY_OW, ("This hurts more than I thought!", null) },
-      {TalkState.BONED, ("That didn't go as planned", null) },
-      {TalkState.GUN_WENT_OFF, ("Well, that sucks!", null) },
-      {TalkState.SURVIVED, ("I knew I would live!", null) },
+      {TalkState.TALK_SMACK, ("I am your father!", null) },
+      {TalkState.SAY_OW, ("ONLY YOUR HATRED CAN DESTROY ME", null) },
+      {TalkState.BONED, ("I hate sand", null) },
+      {TalkState.GUN_WENT_OFF, ("This will be a day long remembered", null) },
+      {TalkState.SURVIVED, ("You don't know the power of the dark side!", null) },
     };
         return c;
     }

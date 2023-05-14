@@ -519,7 +519,50 @@ namespace RRRPG.Properties {
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
-        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Img_Darth_Vader_NoWeapon
+        {
+            get
+            {
+                object obj = ResourceManager.GetObject("Img_Darth_Vader_NoWeapon", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Img_Darth_Vader_Idle
+        {
+            get
+            {
+                object obj = ResourceManager.GetObject("Img_Darth_Vader_Idle", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Img_Darth_Vader_Ready
+        {
+            get
+            {
+                object obj = ResourceManager.GetObject("Img_Darth_Vader_Ready", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Img_Darth_Vader_Kill
+        {
+            get
+            {
+                object obj = ResourceManager.GetObject("Img_Darth_Vader_Kill", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
