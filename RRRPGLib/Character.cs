@@ -276,7 +276,7 @@ public class Character {
         c.dialogMap = new() {
       {TalkState.TALK_SMACK, ("I am your father!", null) },
       {TalkState.SAY_OW, ("ONLY YOUR HATRED CAN DESTROY ME", null) },
-      {TalkState.BONED, ("I hate sand", null) },
+      {TalkState.BONED, ("I don't like sand", null) },
       {TalkState.GUN_WENT_OFF, ("This will be a day long remembered", null) },
       {TalkState.SURVIVED, ("You don't know the power of the dark side!", null) },
     };

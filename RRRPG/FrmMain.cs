@@ -265,6 +265,7 @@ namespace RRRPG
             tmrPlayMusicAfterGameOver.Enabled = false;
         }
 
+
         private void pictureBox_Click(object sender, EventArgs e)
         {
             int randIndex;
