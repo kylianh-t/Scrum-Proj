@@ -14,7 +14,7 @@ namespace RRRPG
         private Character player;
         private Character opponent;
         private Weapon weapon;
-        private int numofgames=0;
+        private int numofgames = 0;
         private List<string> rand_Names = new List<string> { "Neo", "Sakura", "Voldemort", "Stewie", "Your Mom", "My Mom", "Danny Phantom", "Harry Potter", "Sasuke", "Naruto", "Sephiroth", "Clark Kent", "Batman", "Joker", "JigglyPuff", "Timmy Turner", "SpongeBob", "Eren Yeager", "Henry", "Curious George", "Pikachu", "Jesus", "Ash", "Link", "Ganondorf", "Bayonetta", "Captain Falcon", "Mario", "Nes", "Cloud" };
         static Random rnd = new Random();
         private Dictionary<WeaponType, (PictureBox pic, Label lbl)> weaponSelectMap;
@@ -169,7 +169,7 @@ namespace RRRPG
                 picWeaponSelectBow.Visible = true;
                 lblWeaponSelectBow.Visible = true;
             }
-            
+
         }
 
         private void btnDoIt_Click(object sender, EventArgs e)
@@ -412,6 +412,38 @@ namespace RRRPG
 
         }
 
-
+        private void pictureBoxRandom_Click(object sender, EventArgs e)
+        {
+            int randIndex;
+            if (numofgames < 5)
+            {
+                randIndex = rnd.Next(numofgames + 1);
+            }
+            else
+            {
+                randIndex = rnd.Next(5);
+            }
+            switch (randIndex)
+            {
+                case 0:
+                    SelectWeapon(WeaponType.MAGIC_WAND);
+                    break;
+                case 1:
+                    SelectWeapon(WeaponType.CORK_GUN);
+                    break;
+                case 2:
+                    SelectWeapon(WeaponType.WATER_GUN);
+                    break;
+                case 3:
+                    SelectWeapon(WeaponType.NERF_REVOLVER);
+                    break;
+                case 4:
+                    SelectWeapon(WeaponType.BOW);
+                    break;
+                default:
+                    SelectWeapon(WeaponType.MAGIC_WAND);
+                    break;
+            }
+        }
     }
 }
