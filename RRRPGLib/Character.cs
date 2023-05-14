@@ -327,9 +327,9 @@ public class Character {
     };
     c.dialogMap = new() {
       {TalkState.TALK_SMACK, ("", Resources.GetStream("Snd_Stewie_Hey")) },
-      {TalkState.SAY_OW, ("", Resources.GetStream("Snd_Stewie_Shot")) },
+      {TalkState.SAY_OW, ("", null) },
       {TalkState.BONED, ("AAAAAAAAAAAAAAAAAA!", Resources.GetStream("Snd_Stewie_Death")) },
-      {TalkState.GUN_WENT_OFF, ("", Resources.GetStream("Snd_Gunshot")) },
+      {TalkState.GUN_WENT_OFF, ("", Resources.GetStream("Snd_Stewie_Shot")) },
       {TalkState.SURVIVED, ("I'm back for more", Resources.GetStream("Snd_Stewie_Hey")) },
     };
     return c;
