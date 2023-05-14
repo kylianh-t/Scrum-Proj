@@ -63,46 +63,6 @@ namespace RRRPG.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Gif_Koolaid_Ready {
-            get {
-                object obj = ResourceManager.GetObject("Gif_Koolaid_Ready", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap Gif_Putin_Wall {
-            get {
-                object obj = ResourceManager.GetObject("Gif_Putin_Wall", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap Gif_Spongebob_Death {
-            get {
-                object obj = ResourceManager.GetObject("Gif_Spongebob_Death", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap Gif_Spongebob_Shot {
-            get {
-                object obj = ResourceManager.GetObject("Gif_Spongebob_Shot", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
         internal static System.Drawing.Bitmap Gif_Yoshi_Death {
             get {
                 object obj = ResourceManager.GetObject("Gif_Yoshi_Death", resourceCulture);
