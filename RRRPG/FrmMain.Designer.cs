@@ -73,6 +73,8 @@
             label15 = new Label();
             pictureBox1 = new PictureBox();
             button1 = new Button();
+            label6 = new Label();
+            pictureBoxRandom = new PictureBox();
             ((System.ComponentModel.ISupportInitialize)picOpponent).BeginInit();
             ((System.ComponentModel.ISupportInitialize)picPlayer).BeginInit();
             ((System.ComponentModel.ISupportInitialize)picWeaponSelectMagicWand).BeginInit();
@@ -82,6 +84,7 @@
             ((System.ComponentModel.ISupportInitialize)picWeaponSelectWaterGun).BeginInit();
             ((System.ComponentModel.ISupportInitialize)picWeaponSelectCorkGun).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBoxRandom).BeginInit();
             SuspendLayout();
             // 
             // picOpponent
@@ -147,7 +150,7 @@
             picWeaponSelectMagicWand.BackgroundImageLayout = ImageLayout.Zoom;
             picWeaponSelectMagicWand.Location = new Point(12, 10);
             picWeaponSelectMagicWand.Name = "picWeaponSelectMagicWand";
-            picWeaponSelectMagicWand.Size = new Size(128, 153);
+            picWeaponSelectMagicWand.Size = new Size(85, 153);
             picWeaponSelectMagicWand.TabIndex = 5;
             picWeaponSelectMagicWand.TabStop = false;
             picWeaponSelectMagicWand.Click += picWeaponSelectMagicWand_Click;
@@ -158,7 +161,7 @@
             lblWeaponSelectMagicWand.BackColor = Color.Transparent;
             lblWeaponSelectMagicWand.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
             lblWeaponSelectMagicWand.ForeColor = Color.White;
-            lblWeaponSelectMagicWand.Location = new Point(46, 166);
+            lblWeaponSelectMagicWand.Location = new Point(31, 166);
             lblWeaponSelectMagicWand.Name = "lblWeaponSelectMagicWand";
             lblWeaponSelectMagicWand.Size = new Size(57, 21);
             lblWeaponSelectMagicWand.TabIndex = 6;
@@ -167,6 +170,8 @@
             // panWeaponSelect
             // 
             panWeaponSelect.BackColor = Color.Gray;
+            panWeaponSelect.Controls.Add(label6);
+            panWeaponSelect.Controls.Add(pictureBoxRandom);
             panWeaponSelect.Controls.Add(lblWeaponSelectBow);
             panWeaponSelect.Controls.Add(picWeaponSelectBow);
             panWeaponSelect.Controls.Add(lblWeaponSelectNerfRev);
@@ -190,7 +195,7 @@
             lblWeaponSelectBow.BackColor = Color.Transparent;
             lblWeaponSelectBow.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
             lblWeaponSelectBow.ForeColor = Color.White;
-            lblWeaponSelectBow.Location = new Point(500, 166);
+            lblWeaponSelectBow.Location = new Point(379, 166);
             lblWeaponSelectBow.Name = "lblWeaponSelectBow";
             lblWeaponSelectBow.Size = new Size(43, 21);
             lblWeaponSelectBow.TabIndex = 15;
@@ -201,9 +206,9 @@
             picWeaponSelectBow.BackColor = Color.Gray;
             picWeaponSelectBow.BackgroundImage = Properties.Resources.Img_Bow;
             picWeaponSelectBow.BackgroundImageLayout = ImageLayout.Zoom;
-            picWeaponSelectBow.Location = new Point(466, 11);
+            picWeaponSelectBow.Location = new Point(369, 11);
             picWeaponSelectBow.Name = "picWeaponSelectBow";
-            picWeaponSelectBow.Size = new Size(100, 152);
+            picWeaponSelectBow.Size = new Size(57, 152);
             picWeaponSelectBow.TabIndex = 14;
             picWeaponSelectBow.TabStop = false;
             picWeaponSelectBow.Click += picWeaponSelectBow_Click;
@@ -214,20 +219,20 @@
             lblWeaponSelectNerfRev.BackColor = Color.Transparent;
             lblWeaponSelectNerfRev.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
             lblWeaponSelectNerfRev.ForeColor = Color.White;
-            lblWeaponSelectNerfRev.Location = new Point(351, 166);
+            lblWeaponSelectNerfRev.Location = new Point(276, 166);
             lblWeaponSelectNerfRev.Name = "lblWeaponSelectNerfRev";
-            lblWeaponSelectNerfRev.Size = new Size(115, 21);
+            lblWeaponSelectNerfRev.Size = new Size(79, 21);
             lblWeaponSelectNerfRev.TabIndex = 13;
-            lblWeaponSelectNerfRev.Text = "Nerf Revolver";
+            lblWeaponSelectNerfRev.Text = "Nerf Gun";
             // 
             // picWeaponSelectNerfRev
             // 
             picWeaponSelectNerfRev.BackColor = Color.Gray;
             picWeaponSelectNerfRev.BackgroundImage = Properties.Resources.Img_Nerf_Revolver;
             picWeaponSelectNerfRev.BackgroundImageLayout = ImageLayout.Zoom;
-            picWeaponSelectNerfRev.Location = new Point(358, 11);
+            picWeaponSelectNerfRev.Location = new Point(285, 11);
             picWeaponSelectNerfRev.Name = "picWeaponSelectNerfRev";
-            picWeaponSelectNerfRev.Size = new Size(100, 152);
+            picWeaponSelectNerfRev.Size = new Size(57, 152);
             picWeaponSelectNerfRev.TabIndex = 12;
             picWeaponSelectNerfRev.TabStop = false;
             picWeaponSelectNerfRev.Click += picWeaponSelectNerfRev_Click;
@@ -251,7 +256,7 @@
             lblWeaponSelectWaterGun.BackColor = Color.Transparent;
             lblWeaponSelectWaterGun.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
             lblWeaponSelectWaterGun.ForeColor = Color.White;
-            lblWeaponSelectWaterGun.Location = new Point(258, 165);
+            lblWeaponSelectWaterGun.Location = new Point(185, 165);
             lblWeaponSelectWaterGun.Name = "lblWeaponSelectWaterGun";
             lblWeaponSelectWaterGun.Size = new Size(90, 21);
             lblWeaponSelectWaterGun.TabIndex = 10;
@@ -263,7 +268,7 @@
             lblWeaponSelectCorkGun.BackColor = Color.Transparent;
             lblWeaponSelectCorkGun.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
             lblWeaponSelectCorkGun.ForeColor = Color.White;
-            lblWeaponSelectCorkGun.Location = new Point(156, 165);
+            lblWeaponSelectCorkGun.Location = new Point(105, 165);
             lblWeaponSelectCorkGun.Name = "lblWeaponSelectCorkGun";
             lblWeaponSelectCorkGun.Size = new Size(80, 21);
             lblWeaponSelectCorkGun.TabIndex = 9;
@@ -274,9 +279,9 @@
             picWeaponSelectWaterGun.BackColor = Color.Gray;
             picWeaponSelectWaterGun.BackgroundImage = Properties.Resources.Img_Water_Gun;
             picWeaponSelectWaterGun.BackgroundImageLayout = ImageLayout.Zoom;
-            picWeaponSelectWaterGun.Location = new Point(252, 10);
+            picWeaponSelectWaterGun.Location = new Point(200, 10);
             picWeaponSelectWaterGun.Name = "picWeaponSelectWaterGun";
-            picWeaponSelectWaterGun.Size = new Size(100, 152);
+            picWeaponSelectWaterGun.Size = new Size(57, 152);
             picWeaponSelectWaterGun.TabIndex = 8;
             picWeaponSelectWaterGun.TabStop = false;
             picWeaponSelectWaterGun.Click += picWeaponSelectWaterGun_Click;
@@ -286,9 +291,9 @@
             picWeaponSelectCorkGun.BackColor = Color.Gray;
             picWeaponSelectCorkGun.BackgroundImage = Properties.Resources.Img_Cork_Gun;
             picWeaponSelectCorkGun.BackgroundImageLayout = ImageLayout.Zoom;
-            picWeaponSelectCorkGun.Location = new Point(146, 10);
+            picWeaponSelectCorkGun.Location = new Point(116, 10);
             picWeaponSelectCorkGun.Name = "picWeaponSelectCorkGun";
-            picWeaponSelectCorkGun.Size = new Size(100, 152);
+            picWeaponSelectCorkGun.Size = new Size(57, 152);
             picWeaponSelectCorkGun.TabIndex = 7;
             picWeaponSelectCorkGun.TabStop = false;
             picWeaponSelectCorkGun.Click += picWeaponSelectCorkGun_Click;
@@ -598,12 +603,36 @@
             button1.TabIndex = 36;
             button1.UseVisualStyleBackColor = false;
             // 
+            // label6
+            // 
+            label6.AutoSize = true;
+            label6.BackColor = Color.Transparent;
+            label6.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            label6.ForeColor = Color.White;
+            label6.Location = new Point(507, 165);
+            label6.Name = "label6";
+            label6.Size = new Size(74, 21);
+            label6.TabIndex = 17;
+            label6.Text = "Random";
+            // 
+            // pictureBoxRandom
+            // 
+            pictureBoxRandom.BackColor = Color.Gray;
+            pictureBoxRandom.BackgroundImage = Properties.Resources.Img_Shadow_Idle;
+            pictureBoxRandom.BackgroundImageLayout = ImageLayout.Zoom;
+            pictureBoxRandom.Location = new Point(497, 10);
+            pictureBoxRandom.Name = "pictureBoxRandom";
+            pictureBoxRandom.Size = new Size(57, 152);
+            pictureBoxRandom.TabIndex = 16;
+            pictureBoxRandom.TabStop = false;
+            pictureBoxRandom.Click += pictureBoxRandom_Click;
+            // 
             // FrmMain
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.Black;
-            ClientSize = new Size(1085, 887);
+            ClientSize = new Size(1085, 845);
             Controls.Add(lblOpponentSpeak);
             Controls.Add(lblPlayerSpeak);
             Controls.Add(picOpponent);
@@ -650,32 +679,9 @@
             ((System.ComponentModel.ISupportInitialize)picWeaponSelectWaterGun).EndInit();
             ((System.ComponentModel.ISupportInitialize)picWeaponSelectCorkGun).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBoxRandom).EndInit();
             ResumeLayout(false);
             PerformLayout();
-
-            pictureBox1.Controls.Add(picPlayer);
-            picPlayer.Location = new Point(12, 86);
-            picPlayer.BackColor = Color.Transparent;
-
-            pictureBox1.Controls.Add(picOpponent);
-            picOpponent.Location = new Point(535, 119);
-            picOpponent.BackColor = Color.Transparent;
-
-            pictureBox1.Controls.Add(Score);
-            Score.Location = new Point(89, 9);
-            Score.BackColor = Color.Transparent;
-
-            pictureBox1.Controls.Add(label1);
-            label1.Location = new Point(12, 9);
-            label1.BackColor = Color.Transparent;
-
-            pictureBox1.Controls.Add(lblPlayer);
-            lblPlayer.Location = new Point(212, 48);
-            lblPlayer.BackColor = Color.Transparent;
-
-            pictureBox1.Controls.Add(lblOpponent);
-            lblOpponent.Location = new Point(761, 50);
-            lblOpponent.BackColor = Color.Transparent;
         }
 
         #endregion
@@ -725,5 +731,7 @@
         private Label label15;
         private PictureBox pictureBox1;
         private Button button1;
+        private Label label6;
+        private PictureBox pictureBoxRandom;
     }
 }
