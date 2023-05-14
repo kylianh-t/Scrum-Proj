@@ -3,7 +3,6 @@ using RRRPGLib;
 using System.Drawing.Text;
 using System.Media;
 using System.Windows.Forms;
-//using CharacterStats = RRRPGLib.Character;
 
 namespace RRRPG
 {
@@ -153,13 +152,13 @@ namespace RRRPG
             }
             btnDoIt.Visible = false;
         }
-
+        //public int i = 0;
         private void SelectWeapon(WeaponType type)
         {
             Color selectedColor = Color.Yellow;
             foreach (var weaponSel in weaponSelectMap)
             {
-                weaponSel.Value.pic.BackColor = Color.Black;
+                weaponSel.Value.pic.BackColor = Color.Gray;
                 weaponSel.Value.pic.BorderStyle = BorderStyle.None;
                 weaponSel.Value.lbl.ForeColor = Color.White;
             }
@@ -168,7 +167,13 @@ namespace RRRPG
             weaponSelectMap[type].lbl.ForeColor = selectedColor;
             weapon = Weapon.MakeWeapon(type);
             opponent = Character.MakeOpponent(type, picOpponent, lblOpponentSpeak);
+
+            //iniitializes the player one time and keeps the same instance for each vs
+            //if (i == 0)
+            //{
             player = Character.MakePlayer(type, picPlayer, lblPlayerSpeak);
+            //   i += 1;
+            //}
         }
 
         private void picWeaponSelectMagicWand_Click(object sender, EventArgs e)
@@ -258,7 +263,7 @@ namespace RRRPG
             label9.Visible = false;
         }
 
-        
+
         public void GetStats(Character character)
         {
 
@@ -333,27 +338,38 @@ namespace RRRPG
             }
         }
 
-
+        public float y;
         //these functions below are used when the plus button are clicked to help update the stats
         public void ChangeLuck(Character character, float X)
         {
+            //y += X;
 
             //adds the .01 luck value to the player object
-            float L = player.Stats.Luck += X;
+            player.Stats.Luck += X;
         }
         public void ChangeHealth(Character character, int X)
         {
 
             //adds the .01 luck value to the player object
-            int L = player.Stats.Health += X;
+            player.Stats.Health += X;
         }
         public void ChangeReflex(Character character, float X)
         {
 
             //adds the .01 luck value to the player object
-            float L = player.Stats.Reflex += X;
+            player.Stats.Reflex += X;
         }
 
-       
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+
     }
 }

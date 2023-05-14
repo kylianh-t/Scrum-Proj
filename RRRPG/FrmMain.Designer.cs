@@ -62,7 +62,6 @@
             label2 = new Label();
             label4 = new Label();
             label5 = new Label();
-            label6 = new Label();
             label7 = new Label();
             label8 = new Label();
             label9 = new Label();
@@ -72,6 +71,8 @@
             label13 = new Label();
             label14 = new Label();
             label15 = new Label();
+            pictureBox1 = new PictureBox();
+            button1 = new Button();
             ((System.ComponentModel.ISupportInitialize)picOpponent).BeginInit();
             ((System.ComponentModel.ISupportInitialize)picPlayer).BeginInit();
             ((System.ComponentModel.ISupportInitialize)picWeaponSelectMagicWand).BeginInit();
@@ -80,12 +81,14 @@
             ((System.ComponentModel.ISupportInitialize)picWeaponSelectNerfRev).BeginInit();
             ((System.ComponentModel.ISupportInitialize)picWeaponSelectWaterGun).BeginInit();
             ((System.ComponentModel.ISupportInitialize)picWeaponSelectCorkGun).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
             // 
             // picOpponent
             // 
-            picOpponent.BackgroundImageLayout = ImageLayout.Stretch;
-            picOpponent.Location = new Point(525, 120);
+            picOpponent.BackColor = Color.Transparent;
+            picOpponent.BackgroundImageLayout = ImageLayout.None;
+            picOpponent.Location = new Point(535, 119);
             picOpponent.Name = "picOpponent";
             picOpponent.Size = new Size(526, 501);
             picOpponent.TabIndex = 0;
@@ -93,11 +96,12 @@
             // 
             // picPlayer
             // 
+            picPlayer.BackColor = Color.Transparent;
             picPlayer.BackgroundImageLayout = ImageLayout.Stretch;
             picPlayer.Image = Properties.Resources.Img_Bender_Idle;
             picPlayer.Location = new Point(12, 86);
             picPlayer.Name = "picPlayer";
-            picPlayer.Size = new Size(489, 597);
+            picPlayer.Size = new Size(489, 535);
             picPlayer.TabIndex = 1;
             picPlayer.TabStop = false;
             // 
@@ -115,6 +119,7 @@
             // lblPlayer
             // 
             lblPlayer.AutoSize = true;
+            lblPlayer.BackColor = Color.Transparent;
             lblPlayer.Font = new Font("Segoe UI", 18F, FontStyle.Bold, GraphicsUnit.Point);
             lblPlayer.ForeColor = Color.White;
             lblPlayer.Location = new Point(212, 48);
@@ -126,6 +131,7 @@
             // lblOpponent
             // 
             lblOpponent.AutoSize = true;
+            lblOpponent.BackColor = Color.Transparent;
             lblOpponent.Font = new Font("Segoe UI", 18F, FontStyle.Bold, GraphicsUnit.Point);
             lblOpponent.ForeColor = Color.White;
             lblOpponent.Location = new Point(761, 50);
@@ -136,7 +142,7 @@
             // 
             // picWeaponSelectMagicWand
             // 
-            picWeaponSelectMagicWand.BackColor = Color.Black;
+            picWeaponSelectMagicWand.BackColor = Color.Gray;
             picWeaponSelectMagicWand.BackgroundImage = Properties.Resources.Img_Magic_Wand;
             picWeaponSelectMagicWand.BackgroundImageLayout = ImageLayout.Zoom;
             picWeaponSelectMagicWand.Location = new Point(12, 10);
@@ -149,7 +155,7 @@
             // lblWeaponSelectMagicWand
             // 
             lblWeaponSelectMagicWand.AutoSize = true;
-            lblWeaponSelectMagicWand.BackColor = Color.Black;
+            lblWeaponSelectMagicWand.BackColor = Color.Transparent;
             lblWeaponSelectMagicWand.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
             lblWeaponSelectMagicWand.ForeColor = Color.White;
             lblWeaponSelectMagicWand.Location = new Point(46, 166);
@@ -160,7 +166,7 @@
             // 
             // panWeaponSelect
             // 
-            panWeaponSelect.BackColor = Color.Black;
+            panWeaponSelect.BackColor = Color.Gray;
             panWeaponSelect.Controls.Add(lblWeaponSelectBow);
             panWeaponSelect.Controls.Add(picWeaponSelectBow);
             panWeaponSelect.Controls.Add(lblWeaponSelectNerfRev);
@@ -172,6 +178,7 @@
             panWeaponSelect.Controls.Add(picWeaponSelectCorkGun);
             panWeaponSelect.Controls.Add(picWeaponSelectMagicWand);
             panWeaponSelect.Controls.Add(lblWeaponSelectMagicWand);
+            panWeaponSelect.ForeColor = Color.Transparent;
             panWeaponSelect.Location = new Point(507, 636);
             panWeaponSelect.Name = "panWeaponSelect";
             panWeaponSelect.Size = new Size(566, 229);
@@ -180,7 +187,7 @@
             // lblWeaponSelectBow
             // 
             lblWeaponSelectBow.AutoSize = true;
-            lblWeaponSelectBow.BackColor = Color.Black;
+            lblWeaponSelectBow.BackColor = Color.Transparent;
             lblWeaponSelectBow.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
             lblWeaponSelectBow.ForeColor = Color.White;
             lblWeaponSelectBow.Location = new Point(500, 166);
@@ -191,7 +198,7 @@
             // 
             // picWeaponSelectBow
             // 
-            picWeaponSelectBow.BackColor = Color.Black;
+            picWeaponSelectBow.BackColor = Color.Gray;
             picWeaponSelectBow.BackgroundImage = Properties.Resources.Img_Bow;
             picWeaponSelectBow.BackgroundImageLayout = ImageLayout.Zoom;
             picWeaponSelectBow.Location = new Point(466, 11);
@@ -204,7 +211,7 @@
             // lblWeaponSelectNerfRev
             // 
             lblWeaponSelectNerfRev.AutoSize = true;
-            lblWeaponSelectNerfRev.BackColor = Color.Black;
+            lblWeaponSelectNerfRev.BackColor = Color.Transparent;
             lblWeaponSelectNerfRev.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
             lblWeaponSelectNerfRev.ForeColor = Color.White;
             lblWeaponSelectNerfRev.Location = new Point(351, 166);
@@ -215,7 +222,7 @@
             // 
             // picWeaponSelectNerfRev
             // 
-            picWeaponSelectNerfRev.BackColor = Color.Black;
+            picWeaponSelectNerfRev.BackColor = Color.Gray;
             picWeaponSelectNerfRev.BackgroundImage = Properties.Resources.Img_Nerf_Revolver;
             picWeaponSelectNerfRev.BackgroundImageLayout = ImageLayout.Zoom;
             picWeaponSelectNerfRev.Location = new Point(358, 11);
@@ -228,8 +235,9 @@
             // label3
             // 
             label3.AutoSize = true;
+            label3.BackColor = Color.Transparent;
             label3.Font = new Font("Segoe UI", 15.75F, FontStyle.Bold, GraphicsUnit.Point);
-            label3.ForeColor = Color.Silver;
+            label3.ForeColor = Color.White;
             label3.Location = new Point(206, 195);
             label3.Name = "label3";
             label3.Size = new Size(158, 30);
@@ -240,7 +248,7 @@
             // lblWeaponSelectWaterGun
             // 
             lblWeaponSelectWaterGun.AutoSize = true;
-            lblWeaponSelectWaterGun.BackColor = Color.Black;
+            lblWeaponSelectWaterGun.BackColor = Color.Transparent;
             lblWeaponSelectWaterGun.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
             lblWeaponSelectWaterGun.ForeColor = Color.White;
             lblWeaponSelectWaterGun.Location = new Point(258, 165);
@@ -252,7 +260,7 @@
             // lblWeaponSelectCorkGun
             // 
             lblWeaponSelectCorkGun.AutoSize = true;
-            lblWeaponSelectCorkGun.BackColor = Color.Black;
+            lblWeaponSelectCorkGun.BackColor = Color.Transparent;
             lblWeaponSelectCorkGun.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
             lblWeaponSelectCorkGun.ForeColor = Color.White;
             lblWeaponSelectCorkGun.Location = new Point(156, 165);
@@ -263,7 +271,7 @@
             // 
             // picWeaponSelectWaterGun
             // 
-            picWeaponSelectWaterGun.BackColor = Color.Black;
+            picWeaponSelectWaterGun.BackColor = Color.Gray;
             picWeaponSelectWaterGun.BackgroundImage = Properties.Resources.Img_Water_Gun;
             picWeaponSelectWaterGun.BackgroundImageLayout = ImageLayout.Zoom;
             picWeaponSelectWaterGun.Location = new Point(252, 10);
@@ -275,7 +283,7 @@
             // 
             // picWeaponSelectCorkGun
             // 
-            picWeaponSelectCorkGun.BackColor = Color.Black;
+            picWeaponSelectCorkGun.BackColor = Color.Gray;
             picWeaponSelectCorkGun.BackgroundImage = Properties.Resources.Img_Cork_Gun;
             picWeaponSelectCorkGun.BackgroundImageLayout = ImageLayout.Zoom;
             picWeaponSelectCorkGun.Location = new Point(146, 10);
@@ -287,8 +295,13 @@
             // 
             // btnStart
             // 
+            btnStart.FlatAppearance.BorderColor = Color.DimGray;
+            btnStart.FlatAppearance.BorderSize = 5;
+            btnStart.FlatAppearance.MouseOverBackColor = Color.Yellow;
+            btnStart.FlatStyle = FlatStyle.Flat;
             btnStart.Font = new Font("Segoe UI", 26.25F, FontStyle.Bold, GraphicsUnit.Point);
-            btnStart.Location = new Point(212, 768);
+            btnStart.ForeColor = Color.White;
+            btnStart.Location = new Point(247, 713);
             btnStart.Name = "btnStart";
             btnStart.Size = new Size(225, 70);
             btnStart.TabIndex = 8;
@@ -334,11 +347,12 @@
             label1.BackColor = Color.Transparent;
             label1.Font = new Font("Segoe UI", 18F, FontStyle.Bold, GraphicsUnit.Point);
             label1.ForeColor = SystemColors.ButtonFace;
-            label1.Location = new Point(173, 16);
+            label1.Location = new Point(12, 9);
             label1.Name = "label1";
             label1.Size = new Size(84, 32);
             label1.TabIndex = 12;
             label1.Text = "Score:";
+            label1.Click += label1_Click;
             // 
             // Score
             // 
@@ -346,22 +360,26 @@
             Score.BackColor = Color.Transparent;
             Score.Font = new Font("Segoe UI", 18F, FontStyle.Bold, GraphicsUnit.Point);
             Score.ForeColor = Color.White;
-            Score.Location = new Point(250, 16);
+            Score.Location = new Point(89, 9);
             Score.MinimumSize = new Size(100, 0);
             Score.Name = "Score";
             Score.Size = new Size(100, 32);
             Score.TabIndex = 13;
             Score.Text = "0";
-            
             // 
             // Shop
             // 
-            Shop.Font = new Font("Segoe UI", 26.25F, FontStyle.Bold, GraphicsUnit.Point);
-            Shop.Location = new Point(12, 768);
+            Shop.FlatAppearance.BorderColor = Color.DimGray;
+            Shop.FlatAppearance.BorderSize = 5;
+            Shop.FlatAppearance.MouseOverBackColor = Color.FromArgb(255, 255, 128);
+            Shop.FlatStyle = FlatStyle.Flat;
+            Shop.Font = new Font("Segoe UI", 26F, FontStyle.Bold, GraphicsUnit.Point);
+            Shop.ForeColor = Color.White;
+            Shop.Location = new Point(47, 713);
             Shop.Name = "Shop";
             Shop.Size = new Size(194, 70);
             Shop.TabIndex = 14;
-            Shop.Text = "Shop";
+            Shop.Text = "SHOP";
             Shop.UseVisualStyleBackColor = true;
             Shop.Click += button1_Click;
             // 
@@ -424,7 +442,6 @@
             label2.TabIndex = 22;
             label2.Text = "Luck";
             label2.Visible = false;
-            
             // 
             // label4
             // 
@@ -437,7 +454,6 @@
             label4.TabIndex = 23;
             label4.Text = "Health";
             label4.Visible = false;
-            
             // 
             // label5
             // 
@@ -450,16 +466,6 @@
             label5.TabIndex = 24;
             label5.Text = "Reflex";
             label5.Visible = false;
-            
-            // 
-            // label6
-            // 
-            label6.AutoSize = true;
-            label6.Location = new Point(434, 744);
-            label6.Name = "label6";
-            label6.Size = new Size(38, 15);
-            label6.TabIndex = 25;
-            label6.Text = "label6";
             // 
             // label7
             // 
@@ -473,7 +479,6 @@
             label7.Text = "Stats";
             label7.TextAlign = ContentAlignment.MiddleLeft;
             label7.Visible = false;
-            
             // 
             // label8
             // 
@@ -487,7 +492,6 @@
             label8.Text = "Stats";
             label8.TextAlign = ContentAlignment.MiddleLeft;
             label8.Visible = false;
-            
             // 
             // label9
             // 
@@ -512,7 +516,6 @@
             label10.Size = new Size(200, 32);
             label10.TabIndex = 29;
             label10.Visible = false;
-            
             // 
             // label11
             // 
@@ -524,7 +527,6 @@
             label11.Size = new Size(200, 32);
             label11.TabIndex = 30;
             label11.Visible = false;
-            
             // 
             // label12
             // 
@@ -536,7 +538,6 @@
             label12.Size = new Size(200, 32);
             label12.TabIndex = 31;
             label12.Visible = false;
-            
             // 
             // label13
             // 
@@ -548,7 +549,6 @@
             label13.Size = new Size(10, 32);
             label13.TabIndex = 32;
             label13.Visible = false;
-            
             // 
             // label14
             // 
@@ -560,7 +560,6 @@
             label14.Size = new Size(10, 32);
             label14.TabIndex = 33;
             label14.Visible = false;
-            
             // 
             // label15
             // 
@@ -572,7 +571,32 @@
             label15.Size = new Size(10, 32);
             label15.TabIndex = 34;
             label15.Visible = false;
-            
+            // 
+            // pictureBox1
+            // 
+            pictureBox1.BackColor = Color.Transparent;
+            pictureBox1.Image = Properties.Resources.EVLyO8VVAAIt1ru;
+            pictureBox1.Location = new Point(0, -1);
+            pictureBox1.Name = "pictureBox1";
+            pictureBox1.Size = new Size(1086, 631);
+            pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox1.TabIndex = 35;
+            pictureBox1.TabStop = false;
+            pictureBox1.Click += pictureBox1_Click;
+            // 
+            // button1
+            // 
+            button1.BackColor = Color.Gray;
+            button1.Enabled = false;
+            button1.FlatAppearance.BorderColor = Color.White;
+            button1.FlatAppearance.BorderSize = 5;
+            button1.FlatStyle = FlatStyle.Flat;
+            button1.ForeColor = Color.Black;
+            button1.Location = new Point(0, 627);
+            button1.Name = "button1";
+            button1.Size = new Size(1086, 263);
+            button1.TabIndex = 36;
+            button1.UseVisualStyleBackColor = false;
             // 
             // FrmMain
             // 
@@ -580,6 +604,11 @@
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.Black;
             ClientSize = new Size(1085, 887);
+            Controls.Add(lblOpponentSpeak);
+            Controls.Add(lblPlayerSpeak);
+            Controls.Add(picOpponent);
+            Controls.Add(Shop);
+            Controls.Add(btnStart);
             Controls.Add(label13);
             Controls.Add(label14);
             Controls.Add(label15);
@@ -589,7 +618,6 @@
             Controls.Add(label9);
             Controls.Add(label8);
             Controls.Add(label7);
-            Controls.Add(label6);
             Controls.Add(label5);
             Controls.Add(label4);
             Controls.Add(label2);
@@ -597,18 +625,16 @@
             Controls.Add(button4);
             Controls.Add(button2);
             Controls.Add(CloseShop);
-            Controls.Add(Shop);
             Controls.Add(Score);
             Controls.Add(label1);
-            Controls.Add(lblPlayerSpeak);
-            Controls.Add(lblOpponentSpeak);
-            Controls.Add(btnStart);
             Controls.Add(panWeaponSelect);
             Controls.Add(lblOpponent);
             Controls.Add(lblPlayer);
             Controls.Add(btnDoIt);
             Controls.Add(picPlayer);
-            Controls.Add(picOpponent);
+            Controls.Add(pictureBox1);
+            Controls.Add(button1);
+            ForeColor = Color.Black;
             Icon = (Icon)resources.GetObject("$this.Icon");
             Name = "FrmMain";
             Text = "Russian Roulette RPG";
@@ -623,11 +649,38 @@
             ((System.ComponentModel.ISupportInitialize)picWeaponSelectNerfRev).EndInit();
             ((System.ComponentModel.ISupportInitialize)picWeaponSelectWaterGun).EndInit();
             ((System.ComponentModel.ISupportInitialize)picWeaponSelectCorkGun).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ResumeLayout(false);
             PerformLayout();
+
+            pictureBox1.Controls.Add(picPlayer);
+            picPlayer.Location = new Point(12, 86);
+            picPlayer.BackColor = Color.Transparent;
+
+            pictureBox1.Controls.Add(picOpponent);
+            picOpponent.Location = new Point(535, 119);
+            picOpponent.BackColor = Color.Transparent;
+
+            pictureBox1.Controls.Add(Score);
+            Score.Location = new Point(89, 9);
+            Score.BackColor = Color.Transparent;
+
+            pictureBox1.Controls.Add(label1);
+            label1.Location = new Point(12, 9);
+            label1.BackColor = Color.Transparent;
+
+            pictureBox1.Controls.Add(lblPlayer);
+            lblPlayer.Location = new Point(212, 48);
+            lblPlayer.BackColor = Color.Transparent;
+
+            pictureBox1.Controls.Add(lblOpponent);
+            lblOpponent.Location = new Point(761, 50);
+            lblOpponent.BackColor = Color.Transparent;
         }
 
         #endregion
+
+
 
         private PictureBox picOpponent;
         private PictureBox picPlayer;
@@ -661,7 +714,6 @@
         private Label label2;
         private Label label4;
         private Label label5;
-        private Label label6;
         private Label label7;
         private Label label8;
         private Label label9;
@@ -671,5 +723,7 @@
         private Label label13;
         private Label label14;
         private Label label15;
+        private PictureBox pictureBox1;
+        private Button button1;
     }
 }

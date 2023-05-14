@@ -1,6 +1,7 @@
 ﻿using System.Drawing;
 using System.Windows.Forms;
 using static RRRPGLib.ResourcesRef;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 using ImgState = RRRPGLib.CharacterImgStateType;
 using TalkState = RRRPGLib.CharacterTalkStateType;
 
@@ -68,15 +69,15 @@ public class Character {
     c.Shutup();
     return c;
   }
-
-  /// <summary>
-  /// Create a player with the appropriate animations and dialog for the given weapon
-  /// </summary>
-  /// <param name="weaponType">Type of weapon to create the player for</param>
-  /// <param name="pic">PictureBox to hold the image of the player</param>
-  /// <param name="lblTalk">Label to hold the player's dialog</param>
-  /// <returns></returns>
-  public static Character MakePlayer(WeaponType weaponType, PictureBox pic, Label lblTalk) {
+    
+    /// <summary>
+    /// Create a player with the appropriate animations and dialog for the given weapon
+    /// </summary>
+    /// <param name="weaponType">Type of weapon to create the player for</param>
+    /// <param name="pic">PictureBox to hold the image of the player</param>
+    /// <param name="lblTalk">Label to hold the player's dialog</param>
+    /// <returns></returns>
+    public static Character MakePlayer(WeaponType weaponType, PictureBox pic, Label lblTalk) {
     Character c = weaponType switch {
       WeaponType.MAGIC_WAND => MakeMagicWandPlayer(),
       WeaponType.NERF_REVOLVER => MakeNerfRevolverPlayer(),
@@ -114,11 +115,14 @@ public class Character {
     return false;
   }
 
-  /// <summary>
-  /// Allows the character to say the dialog that goes with the <see cref="TalkState.TALK_SMACK"/> state
-  /// </summary>
-  public void SaySmack() => Say(dialogMap[TalkState.TALK_SMACK]);
-
+    /// <summary>
+    /// Allows the character to say the dialog that goes with the <see cref="TalkState.TALK_SMACK"/> state
+    /// </summary>
+    public void SaySmack()
+    {
+        Say(dialogMap[TalkState.TALK_SMACK]);
+        Console.WriteLine(dialogMap);
+    }
   /// <summary>
   /// Allows the character to say the dialog that goes with the <see cref="TalkState.SAY_OW"/> state
   /// </summary>
@@ -261,10 +265,12 @@ public class Character {
     };
     return c;
   }
-
+    
   public static Character MakeMagicWandPlayer() {
     Character c = new Character();
-    c.Stats = new(luck: 0.5f, health: 100, reflex: 0.3f);
+        c.Stats = new(luck: 0.5f, health: 100, reflex: 0.3f);
+        
+
     c.imgMap = new() {
       {ImgState.IDLE, Resources.GetObject("Img_Bender_Idle") as Bitmap },
       {ImgState.NO_WEAPON, Resources.GetObject("Img_Bender_Idle") as Bitmap },
@@ -336,8 +342,9 @@ public class Character {
   }
   private static Character MakeWaterGunPlayer() {
     Character c = new Character();
-    c.Stats = new(luck: 0.5f, health: 100, reflex: 0.3f);
-    c.imgMap = new() {
+        c.Stats = new(luck: 0.5f, health: 100, reflex: 0.3f);
+       
+        c.imgMap = new() {
       {ImgState.IDLE, Resources.GetObject("Img_Bender_Idle") as Bitmap },
       {ImgState.NO_WEAPON, Resources.GetObject("Img_Bender_Idle") as Bitmap },
       {ImgState.READY, Resources.GetObject("Img_Bender_Ready_WaterGun") as Bitmap },
@@ -379,10 +386,11 @@ public class Character {
   private void Say(string dialog) {
     Say((dialog, null));
   }
-  private void Say((string dialog, UnmanagedMemoryStream audio) msg) {
+
+    private void Say((string dialog, UnmanagedMemoryStream audio) msg) {
     lblTalk.Text = msg.dialog;
     lblTalk.Visible = true;
-    if (msg.audio is not null) {
+        if (msg.audio is not null) {
       SoundManager.Play(msg.audio);
     }
   }
