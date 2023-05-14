@@ -75,6 +75,7 @@
             button1 = new Button();
             button3 = new Button();
             volumeSlider = new TrackBar();
+            timer1 = new System.Windows.Forms.Timer(components);
             ((System.ComponentModel.ISupportInitialize)picOpponent).BeginInit();
             ((System.ComponentModel.ISupportInitialize)picPlayer).BeginInit();
             ((System.ComponentModel.ISupportInitialize)picWeaponSelectMagicWand).BeginInit();
@@ -640,6 +641,11 @@
             volumeSlider.Value = 100;
             volumeSlider.Scroll += volumeSlider_Scroll;
             // 
+            // timer1
+            // 
+            timer1.Interval = 110000;
+            timer1.Tick += timer1_Tick;
+            // 
             // FrmMain
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
@@ -749,5 +755,6 @@
         private Button button1;
         private Button button3;
         private TrackBar volumeSlider;
+        private System.Windows.Forms.Timer timer1;
     }
 }

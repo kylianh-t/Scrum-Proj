@@ -57,4 +57,15 @@ public partial class FrmTitle : Form
     {
         waveOut.Volume = (float)volumeSlider.Value / 100f;
     }
+
+    private void timer1_Tick(object sender, EventArgs e)
+    {
+        waveOut.Stop();
+        waveOut.Dispose();
+        waveFileReader.Dispose();
+        waveOut = new WaveOutEvent();
+        waveFileReader = new WaveFileReader(Resources.Mus_Title_Bg_Music_3);
+        waveOut.Init(waveFileReader);
+        waveOut.Play();
+    }
 }

@@ -28,10 +28,12 @@
         /// </summary>
         private void InitializeComponent()
         {
+            components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmTitle));
             btnPlay = new Button();
             button1 = new Button();
             volumeSlider = new TrackBar();
+            timer1 = new System.Windows.Forms.Timer(components);
             ((System.ComponentModel.ISupportInitialize)volumeSlider).BeginInit();
             SuspendLayout();
             // 
@@ -75,6 +77,12 @@
             volumeSlider.Value = 100;
             volumeSlider.Scroll += volumeSlider_Scroll;
             // 
+            // timer1
+            // 
+            timer1.Enabled = true;
+            timer1.Interval = 110000;
+            timer1.Tick += timer1_Tick;
+            // 
             // FrmTitle
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
@@ -103,5 +111,6 @@
         private Button btnPlay;
         private Button button1;
         private TrackBar volumeSlider;
+        private System.Windows.Forms.Timer timer1;
     }
 }
