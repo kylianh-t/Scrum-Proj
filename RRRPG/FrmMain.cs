@@ -30,6 +30,16 @@ namespace RRRPG
             btnDoIt.Visible = false;
             lblOpponentSpeak.Visible = false;
             lblPlayerSpeak.Visible = false;
+            picWeaponSelectBow.Visible = false;
+            picWeaponSelectCorkGun.Visible = false;
+            picWeaponSelectWaterGun.Visible = false;
+            picWeaponSelectNerfRev.Visible = false;
+            //picWeaponSelectLightSaber.Visible = false;
+            //lblWeaponSelectLightSaber.Visible = false;
+            lblWeaponSelectBow.Visible = false;
+            lblWeaponSelectCorkGun.Visible = false;
+            lblWeaponSelectWaterGun.Visible = false;
+            lblWeaponSelectNerfRev.Visible = false;
             weapon = Weapon.MakeWeapon(WeaponType.MAGIC_WAND);
             state = -1;
             weaponSelectMap = new() {
@@ -53,6 +63,7 @@ namespace RRRPG
             tmrStateMachine.Interval = 3500;
             tmrStateMachine.Enabled = true;
             state = 0;
+            numofgames++;
             panWeaponSelect.Visible = false;
             Shop.Visible = false;
         }
