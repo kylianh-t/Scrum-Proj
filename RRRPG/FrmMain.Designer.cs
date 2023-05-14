@@ -345,7 +345,7 @@
             // 
             label1.AutoSize = true;
             label1.BackColor = Color.Transparent;
-            label1.Font = new Font("Segoe UI", 18F, FontStyle.Bold, GraphicsUnit.Point);
+            label1.Font = new Font("Segoe UI", 16F, FontStyle.Bold, GraphicsUnit.Point);
             label1.ForeColor = SystemColors.ButtonFace;
             label1.Location = new Point(12, 9);
             label1.Name = "label1";
@@ -358,7 +358,7 @@
             // 
             Score.AutoSize = true;
             Score.BackColor = Color.Transparent;
-            Score.Font = new Font("Segoe UI", 18F, FontStyle.Bold, GraphicsUnit.Point);
+            Score.Font = new Font("Segoe UI", 16F, FontStyle.Bold, GraphicsUnit.Point);
             Score.ForeColor = Color.White;
             Score.Location = new Point(89, 9);
             Score.MinimumSize = new Size(100, 0);
@@ -435,7 +435,7 @@
             // 
             label2.AutoSize = true;
             label2.BackColor = Color.White;
-            label2.Font = new Font("Segoe UI", 18F, FontStyle.Bold, GraphicsUnit.Point);
+            label2.Font = new Font("Segoe UI", 14F, FontStyle.Bold, GraphicsUnit.Point);
             label2.Location = new Point(12, 695);
             label2.Name = "label2";
             label2.Size = new Size(66, 32);
@@ -447,7 +447,7 @@
             // 
             label4.AutoSize = true;
             label4.BackColor = Color.White;
-            label4.Font = new Font("Segoe UI", 18F, FontStyle.Bold, GraphicsUnit.Point);
+            label4.Font = new Font("Segoe UI", 14F, FontStyle.Bold, GraphicsUnit.Point);
             label4.Location = new Point(12, 730);
             label4.Name = "label4";
             label4.Size = new Size(88, 32);
@@ -459,7 +459,7 @@
             // 
             label5.AutoSize = true;
             label5.BackColor = Color.White;
-            label5.Font = new Font("Segoe UI", 18F, FontStyle.Bold, GraphicsUnit.Point);
+            label5.Font = new Font("Segoe UI", 14F, FontStyle.Bold, GraphicsUnit.Point);
             label5.Location = new Point(12, 766);
             label5.Name = "label5";
             label5.Size = new Size(84, 32);
@@ -483,7 +483,7 @@
             // label8
             // 
             label8.BackColor = Color.White;
-            label8.Font = new Font("Segoe UI", 10F, FontStyle.Bold, GraphicsUnit.Point);
+            label8.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
             label8.Location = new Point(106, 730);
             label8.MinimumSize = new Size(50, 0);
             label8.Name = "label8";
