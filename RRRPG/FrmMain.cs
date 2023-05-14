@@ -3,6 +3,7 @@ using RRRPGLib;
 using System.Drawing.Text;
 using System.Media;
 using System.Windows.Forms;
+using NAudio.Wave;
 
 namespace RRRPG
 {
@@ -10,6 +11,9 @@ namespace RRRPG
     {
         public int Myscore = 0;
         private SoundPlayer soundPlayer;
+        int flag = 1;
+        private WaveOutEvent waveOut;
+        private WaveFileReader waveFileReader;
         private int state;
         private Character player;
         private Character opponent;
@@ -20,12 +24,15 @@ namespace RRRPG
         {
             InitializeComponent();
             FormManager.openForms.Add(this);
+            volumeSlider.Hide();
         }
 
         private void FrmMain_Load(object sender, EventArgs e)
         {
-            soundPlayer = new SoundPlayer(Resources.Mus_Title_Bg_Music);
-            soundPlayer.PlayLooping();
+            waveOut = new WaveOutEvent();
+            waveFileReader = new WaveFileReader(Resources.Mus_Title_Bg_Music);
+            waveOut.Init(waveFileReader);
+            waveOut.Play();
             btnDoIt.Visible = false;
             lblOpponentSpeak.Visible = false;
             lblPlayerSpeak.Visible = false;
@@ -43,7 +50,6 @@ namespace RRRPG
 
         private void btnStart_Click(object sender, EventArgs e)
         {
-            soundPlayer.Stop();
             player.Shutup();
             player.ShowIdle();
             opponent.ShowIdle();
@@ -211,7 +217,7 @@ namespace RRRPG
         {
             if (btnStart.Visible)
             {
-                soundPlayer.PlayLooping();
+                
             }
             tmrPlayMusicAfterGameOver.Enabled = false;
         }
@@ -370,6 +376,18 @@ namespace RRRPG
 
         }
 
+        private void button3_Click(object sender, EventArgs e)
+        {
+            flag *= -1;
+            if (flag == 1)
+                volumeSlider.Hide();
+            else
+                volumeSlider.Show();
+        }
 
+        private void volumeSlider_Scroll(object sender, EventArgs e)
+        {
+            waveOut.Volume = (float)volumeSlider.Value / 100f;
+        }
     }
 }
