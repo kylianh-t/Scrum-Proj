@@ -41,7 +41,7 @@
             lblWeaponSelectLightSaber = new Label();
             picWeaponSelectLightSaber = new PictureBox();
             label1 = new Label();
-            pictureBox1 = new PictureBox();
+            pictureBox = new PictureBox();
             lblWeaponSelectBow = new Label();
             picWeaponSelectBow = new PictureBox();
             lblWeaponSelectNerfRev = new Label();
@@ -61,7 +61,7 @@
             ((System.ComponentModel.ISupportInitialize)picWeaponSelectMagicWand).BeginInit();
             panWeaponSelect.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)picWeaponSelectLightSaber).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox).BeginInit();
             ((System.ComponentModel.ISupportInitialize)picWeaponSelectBow).BeginInit();
             ((System.ComponentModel.ISupportInitialize)picWeaponSelectNerfRev).BeginInit();
             ((System.ComponentModel.ISupportInitialize)picWeaponSelectWaterGun).BeginInit();
@@ -150,7 +150,7 @@
             panWeaponSelect.Controls.Add(lblWeaponSelectLightSaber);
             panWeaponSelect.Controls.Add(picWeaponSelectLightSaber);
             panWeaponSelect.Controls.Add(label1);
-            panWeaponSelect.Controls.Add(pictureBox1);
+            panWeaponSelect.Controls.Add(pictureBox);
             panWeaponSelect.Controls.Add(lblWeaponSelectBow);
             panWeaponSelect.Controls.Add(picWeaponSelectBow);
             panWeaponSelect.Controls.Add(lblWeaponSelectNerfRev);
@@ -173,7 +173,7 @@
             lblWeaponSelectLightSaber.BackColor = Color.Black;
             lblWeaponSelectLightSaber.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
             lblWeaponSelectLightSaber.ForeColor = Color.White;
-            lblWeaponSelectLightSaber.Location = new Point(410, 165);
+            lblWeaponSelectLightSaber.Location = new Point(399, 166);
             lblWeaponSelectLightSaber.Name = "lblWeaponSelectLightSaber";
             lblWeaponSelectLightSaber.Size = new Size(92, 21);
             lblWeaponSelectLightSaber.TabIndex = 19;
@@ -203,17 +203,17 @@
             label1.TabIndex = 17;
             label1.Text = "Random";
             // 
-            // pictureBox1
+            // pictureBox
             // 
-            pictureBox1.BackColor = Color.Black;
-            pictureBox1.BackgroundImage = Properties.Resources.Img_Shadow_Idle;
-            pictureBox1.BackgroundImageLayout = ImageLayout.Zoom;
-            pictureBox1.Location = new Point(492, 11);
-            pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(61, 152);
-            pictureBox1.TabIndex = 16;
-            pictureBox1.TabStop = false;
-            pictureBox1.Click += pictureBox1_Click;
+            pictureBox.BackColor = Color.Black;
+            pictureBox.BackgroundImage = Properties.Resources.Img_Shadow_Idle;
+            pictureBox.BackgroundImageLayout = ImageLayout.Zoom;
+            pictureBox.Location = new Point(492, 11);
+            pictureBox.Name = "pictureBox";
+            pictureBox.Size = new Size(61, 152);
+            pictureBox.TabIndex = 16;
+            pictureBox.TabStop = false;
+            pictureBox.Click += pictureBox_Click;
             // 
             // lblWeaponSelectBow
             // 
@@ -392,7 +392,7 @@
             panWeaponSelect.ResumeLayout(false);
             panWeaponSelect.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)picWeaponSelectLightSaber).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox).EndInit();
             ((System.ComponentModel.ISupportInitialize)picWeaponSelectBow).EndInit();
             ((System.ComponentModel.ISupportInitialize)picWeaponSelectNerfRev).EndInit();
             ((System.ComponentModel.ISupportInitialize)picWeaponSelectWaterGun).EndInit();
@@ -426,7 +426,7 @@
         private PictureBox picWeaponSelectNerfRev;
         private System.Windows.Forms.Timer tmrPlayMusicAfterGameOver;
         private Label label1;
-        private PictureBox pictureBox1;
+        private PictureBox pictureBox;
         private Label lblWeaponSelectLightSaber;
         private PictureBox picWeaponSelectLightSaber;
     }

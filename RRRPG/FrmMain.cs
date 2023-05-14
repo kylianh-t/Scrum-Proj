@@ -12,7 +12,7 @@ namespace RRRPG
         private Character opponent;
         private Weapon weapon;
         private Dictionary<WeaponType, (PictureBox pic, Label lbl)> weaponSelectMap;
-        private List<string> rand_Names = new List<string> { "Neo", "Sakura", "Sasuke", "Naruto", "Sephiroth", "Clark Kent", "Batman", "Joker", "JigglyPuff", "Timmy Turner", "SpongeBob", "Eren Yeager", "Henry", "Curious George", "Pikachu", "Jesus", "Ash", "Link", "Ganondorf", "Bayonetta", "Captain Falcon", "Mario", "Nes", "Cloud" };
+        private List<string> rand_Names = new List<string> { "Neo", "Sakura", "Voldemort", "Stewie", "Your Mom", "My Mom", "Danny Phantom", "Harry Potter", "Sasuke", "Naruto", "Sephiroth", "Clark Kent", "Batman", "Joker", "JigglyPuff", "Timmy Turner", "SpongeBob", "Eren Yeager", "Henry", "Curious George", "Pikachu", "Jesus", "Ash", "Link", "Ganondorf", "Bayonetta", "Captain Falcon", "Mario", "Nes", "Cloud" };
         static Random rnd = new Random();
         private int numofgames = 0;
 
@@ -33,11 +33,8 @@ namespace RRRPG
             picWeaponSelectCorkGun.Visible = false;
             picWeaponSelectWaterGun.Visible = false;
             picWeaponSelectNerfRev.Visible = false;
-// Updated upstream
-          //  picWeaponSelectLightSaber.Visible = false;
-            //lblWeaponSelectLightSaber.Visible = false;
-          //picWeaponSelectLightSaber.Visible = false;
-          //lblWeaponSelectLightSaber.Visible = false; Stashed changes
+            picWeaponSelectLightSaber.Visible = false;
+            lblWeaponSelectLightSaber.Visible = false;
             lblWeaponSelectBow.Visible = false;
             lblWeaponSelectCorkGun.Visible = false;
             lblWeaponSelectWaterGun.Visible = false;
@@ -124,6 +121,11 @@ namespace RRRPG
                     picWeaponSelectBow.Visible = true;
                     lblWeaponSelectBow.Visible = true;
                 }
+                if (numofgames > 4)
+                {
+                    picWeaponSelectLightSaber.Visible = true;
+                    lblWeaponSelectLightSaber.Visible = true;
+                }
             }
             else if (state == 5)
             {
@@ -175,6 +177,11 @@ namespace RRRPG
                 {
                     picWeaponSelectBow.Visible = true;
                     lblWeaponSelectBow.Visible = true;
+                }
+                if (numofgames > 4)
+                {
+                    picWeaponSelectLightSaber.Visible = true;
+                    lblWeaponSelectLightSaber.Visible = true;
                 }
             }
         }
@@ -258,16 +265,16 @@ namespace RRRPG
             tmrPlayMusicAfterGameOver.Enabled = false;
         }
 
-        private void pictureBox1_Click(object sender, EventArgs e)
+        private void pictureBox_Click(object sender, EventArgs e)
         {
             int randIndex;
-            if (numofgames < 5)
+            if (numofgames < 6)
             {
                 randIndex = rnd.Next(numofgames + 1);
             }
             else
             {
-                randIndex = rnd.Next(5);
+                randIndex = rnd.Next(6);
             }
             switch (randIndex)
             {
@@ -286,12 +293,15 @@ namespace RRRPG
                 case 4:
                     SelectWeapon(WeaponType.BOW);
                     break;
+                case 5:
+                    SelectWeapon(WeaponType.LIGHT_SABER);
+                    break;
                 default:
                     SelectWeapon(WeaponType.MAGIC_WAND);
                     break;
             }
         }
 
-       
+
     }
 }
