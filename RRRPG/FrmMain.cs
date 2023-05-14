@@ -15,6 +15,8 @@ namespace RRRPG
         private Character opponent;
         private Weapon weapon;
         private int numofgames=0;
+        private List<string> rand_Names = new List<string> { "Neo", "Sakura", "Voldemort", "Stewie", "Your Mom", "My Mom", "Danny Phantom", "Harry Potter", "Sasuke", "Naruto", "Sephiroth", "Clark Kent", "Batman", "Joker", "JigglyPuff", "Timmy Turner", "SpongeBob", "Eren Yeager", "Henry", "Curious George", "Pikachu", "Jesus", "Ash", "Link", "Ganondorf", "Bayonetta", "Captain Falcon", "Mario", "Nes", "Cloud" };
+        static Random rnd = new Random();
         private Dictionary<WeaponType, (PictureBox pic, Label lbl)> weaponSelectMap;
 
         public FrmMain()
@@ -63,6 +65,8 @@ namespace RRRPG
             tmrStateMachine.Interval = 3500;
             tmrStateMachine.Enabled = true;
             state = 0;
+            lblOpponent.Text = rand_Names[rnd.Next(rand_Names.Count)];
+            lblPlayer.Text = rand_Names[rnd.Next(rand_Names.Count)];
             numofgames++;
             panWeaponSelect.Visible = false;
             Shop.Visible = false;
