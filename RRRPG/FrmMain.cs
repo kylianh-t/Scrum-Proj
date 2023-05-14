@@ -14,6 +14,7 @@ namespace RRRPG
         private Character player;
         private Character opponent;
         private Weapon weapon;
+        private int numofgames=0;
         private Dictionary<WeaponType, (PictureBox pic, Label lbl)> weaponSelectMap;
 
         public FrmMain()
@@ -88,6 +89,7 @@ namespace RRRPG
                 tmrPlayMusicAfterGameOver.Enabled = true;
                 panWeaponSelect.Visible = true;
                 state = -1;
+                Unlock_Weapon();
                 tmrStateMachine.Enabled = false;
 
             }
@@ -124,10 +126,35 @@ namespace RRRPG
                 panWeaponSelect.Visible = true;
                 state = -1;
                 tmrStateMachine.Enabled = false;
+                Unlock_Weapon();
                 Myscore += 5;
                 //when bender's apponent dies, he gets 5 points
                 Score.Text = String.Format("{0}", Myscore);
             }
+        }
+        private void Unlock_Weapon()
+        {
+            if (numofgames > 0)
+            {
+                picWeaponSelectCorkGun.Visible = true;
+                lblWeaponSelectCorkGun.Visible = true;
+            }
+            if (numofgames > 1)
+            {
+                picWeaponSelectWaterGun.Visible = true;
+                lblWeaponSelectWaterGun.Visible = true;
+            }
+            if (numofgames > 2)
+            {
+                picWeaponSelectNerfRev.Visible = true;
+                lblWeaponSelectNerfRev.Visible = true;
+            }
+            if (numofgames > 3)
+            {
+                picWeaponSelectBow.Visible = true;
+                lblWeaponSelectBow.Visible = true;
+            }
+            
         }
 
         private void btnDoIt_Click(object sender, EventArgs e)
