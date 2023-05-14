@@ -68,10 +68,11 @@
             // 
             volumeSlider.BackColor = Color.Black;
             volumeSlider.Location = new Point(90, 903);
+            volumeSlider.Maximum = 100;
             volumeSlider.Name = "volumeSlider";
             volumeSlider.Size = new Size(269, 56);
             volumeSlider.TabIndex = 4;
-            volumeSlider.Value = 10;
+            volumeSlider.Value = 100;
             volumeSlider.Scroll += volumeSlider_Scroll;
             // 
             // FrmTitle

@@ -33,6 +33,7 @@ namespace RRRPG
             waveFileReader = new WaveFileReader(Resources.Mus_Title_Bg_Music);
             waveOut.Init(waveFileReader);
             waveOut.Play();
+            waveOut.Volume = 1;
             btnDoIt.Visible = false;
             lblOpponentSpeak.Visible = false;
             lblPlayerSpeak.Visible = false;
@@ -217,7 +218,7 @@ namespace RRRPG
         {
             if (btnStart.Visible)
             {
-                
+
             }
             tmrPlayMusicAfterGameOver.Enabled = false;
         }

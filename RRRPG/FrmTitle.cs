@@ -32,6 +32,7 @@ public partial class FrmTitle : Form
         waveFileReader = new WaveFileReader(Resources.Mus_Title_Bg_Music_3);
         waveOut.Init(waveFileReader);
         waveOut.Play();
+        waveOut.Volume = 1;
         FormManager.openForms.Add(this);
     }
 

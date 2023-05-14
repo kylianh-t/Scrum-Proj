@@ -633,10 +633,11 @@
             // volumeSlider
             // 
             volumeSlider.Location = new Point(102, 847);
+            volumeSlider.Maximum = 100;
             volumeSlider.Name = "volumeSlider";
             volumeSlider.Size = new Size(257, 56);
             volumeSlider.TabIndex = 38;
-            volumeSlider.Value = 10;
+            volumeSlider.Value = 100;
             volumeSlider.Scroll += volumeSlider_Scroll;
             // 
             // FrmMain
