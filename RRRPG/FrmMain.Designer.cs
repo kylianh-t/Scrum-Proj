@@ -604,6 +604,9 @@
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.Black;
             ClientSize = new Size(1085, 887);
+            Controls.Add(lblOpponentSpeak);
+            Controls.Add(lblPlayerSpeak);
+            Controls.Add(picOpponent);
             Controls.Add(Shop);
             Controls.Add(btnStart);
             Controls.Add(label13);
@@ -624,14 +627,11 @@
             Controls.Add(CloseShop);
             Controls.Add(Score);
             Controls.Add(label1);
-            Controls.Add(lblPlayerSpeak);
-            Controls.Add(lblOpponentSpeak);
             Controls.Add(panWeaponSelect);
             Controls.Add(lblOpponent);
             Controls.Add(lblPlayer);
             Controls.Add(btnDoIt);
             Controls.Add(picPlayer);
-            Controls.Add(picOpponent);
             Controls.Add(pictureBox1);
             Controls.Add(button1);
             ForeColor = Color.Black;

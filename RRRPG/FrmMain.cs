@@ -152,7 +152,7 @@ namespace RRRPG
             }
             btnDoIt.Visible = false;
         }
-        public int i = 0;
+        //public int i = 0;
         private void SelectWeapon(WeaponType type)
         {
             Color selectedColor = Color.Yellow;
@@ -169,11 +169,11 @@ namespace RRRPG
             opponent = Character.MakeOpponent(type, picOpponent, lblOpponentSpeak);
 
             //iniitializes the player one time and keeps the same instance for each vs
-            if (i == 0)
-            {
-                player = Character.MakePlayer(type, picPlayer, lblPlayerSpeak);
-                i += 1;
-            }
+            //if (i == 0)
+            //{
+            player = Character.MakePlayer(type, picPlayer, lblPlayerSpeak);
+            //   i += 1;
+            //}
         }
 
         private void picWeaponSelectMagicWand_Click(object sender, EventArgs e)
@@ -370,6 +370,6 @@ namespace RRRPG
 
         }
 
-        
+
     }
 }

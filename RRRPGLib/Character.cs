@@ -288,12 +288,12 @@ public class Character {
   }
   private static Character MakeNerfRevolverPlayer() {
     Character c = new Character();
-    c.Stats = new(luck: 0.5f, health: 100, reflex: 0.3f);
+    c.Stats = new(luck: 0.2f, health: 101, reflex: 0.7f);
     c.imgMap = new() {
-      {ImgState.IDLE, Resources.GetObject("Img_Bender_Idle") as Bitmap },
-      {ImgState.NO_WEAPON, Resources.GetObject("Img_Bender_Idle") as Bitmap },
-      {ImgState.READY, Resources.GetObject("Img_Bender_Ready_MagicWand") as Bitmap },
-      {ImgState.KILL, Resources.GetObject("Img_Bender_Kill_MagicWand") as Bitmap },
+      {ImgState.IDLE, Resources.GetObject("Img_Neo_NoWeapon") as Bitmap },
+      {ImgState.NO_WEAPON, Resources.GetObject("Img_Neo_NoWeapon") as Bitmap },
+      {ImgState.READY, Resources.GetObject("Img_Neo_Ready") as Bitmap },
+      {ImgState.KILL, Resources.GetObject("Img_Neo_Death") as Bitmap },
     };
     c.dialogMap = new() {
       {TalkState.TALK_SMACK, ("I must find The Architect.", null) },
@@ -306,12 +306,12 @@ public class Character {
   }
   private static Character MakeBowPlayer() {
     Character c = new Character();
-    c.Stats = new(luck: 0.5f, health: 100, reflex: 0.3f);
+    c.Stats = new(luck: 0.5f, health: 120, reflex: 0.3f);
     c.imgMap = new() {
-      {ImgState.IDLE, Resources.GetObject("Img_Bender_Idle") as Bitmap },
-      {ImgState.NO_WEAPON, Resources.GetObject("Img_Bender_Idle") as Bitmap },
-      {ImgState.READY, Resources.GetObject("Img_Bender_Ready_MagicWand") as Bitmap },
-      {ImgState.KILL, Resources.GetObject("Img_Bender_Kill_MagicWand") as Bitmap },
+      {ImgState.IDLE, Resources.GetObject("Img_Bowser_NoWeapon") as Bitmap },
+      {ImgState.NO_WEAPON, Resources.GetObject("Img_Bowser_NoWeapon") as Bitmap },
+      {ImgState.READY, Resources.GetObject("Img_Bowser_Ready") as Bitmap },
+      {ImgState.KILL, Resources.GetObject("Img_Bowser_Death") as Bitmap },
     };
     c.dialogMap = new() {
       {TalkState.TALK_SMACK, ("Who is this puny foe", Resources.GetStream("Snd_Bowser_LaughingIntro")) },
@@ -326,10 +326,10 @@ public class Character {
     Character c = new Character();
     c.Stats = new(luck: 0.5f, health: 100, reflex: 0.3f);
     c.imgMap = new() {
-      {ImgState.IDLE, Resources.GetObject("Img_Bender_Idle") as Bitmap },
-      {ImgState.NO_WEAPON, Resources.GetObject("Img_Bender_Idle") as Bitmap },
-      {ImgState.READY, Resources.GetObject("Img_Bender_Ready_MagicWand") as Bitmap },
-      {ImgState.KILL, Resources.GetObject("Img_Bender_Kill_MagicWand") as Bitmap },
+      {ImgState.IDLE, Resources.GetObject("Img_Stewie_Idle") as Bitmap },
+      {ImgState.NO_WEAPON, Resources.GetObject("Img_Stewie_Idle") as Bitmap },
+      {ImgState.READY, Resources.GetObject("Img_Stewie_Ready") as Bitmap },
+      {ImgState.KILL, Resources.GetObject("Img_Stewie_Death") as Bitmap },
     };
     c.dialogMap = new() {
       {TalkState.TALK_SMACK, ("", Resources.GetStream("Snd_Stewie_Hey")) },
