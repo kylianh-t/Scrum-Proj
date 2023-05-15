@@ -219,7 +219,7 @@ public class Character {
         c.Stats = new(luck: 0.2f, health: 120, reflex: 0.1f);
         c.imgMap = new() {
       {ImgState.IDLE, Resources.GetObject("Img_Darth_Vader_Idle") as Bitmap },
-      {ImgState.NO_WEAPON, Resources.GetObject("Img_Darth_Vader_NoWeapon") as Bitmap },
+      {ImgState.NO_WEAPON, Resources.GetObject("Img_Darth_Vader_Idle") as Bitmap },
       {ImgState.READY, Resources.GetObject("Img_Darth_Vader_Ready") as Bitmap },
       {ImgState.KILL, Resources.GetObject("Img_Darth_Vader_Kill") as Bitmap },
     };

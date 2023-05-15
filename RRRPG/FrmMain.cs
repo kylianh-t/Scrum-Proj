@@ -45,8 +45,8 @@ namespace RRRPG
             picWeaponSelectCorkGun.Visible = false;
             picWeaponSelectWaterGun.Visible = false;
             picWeaponSelectNerfRev.Visible = false;
-            //picWeaponSelectLightSaber.Visible = false;
-            //lblWeaponSelectLightSaber.Visible = false;
+            picWeaponSelectSaber.Visible = false;
+            lblWeaponSelectSaber.Visible = false;
             lblWeaponSelectBow.Visible = false;
             lblWeaponSelectCorkGun.Visible = false;
             lblWeaponSelectWaterGun.Visible = false;
@@ -178,7 +178,12 @@ namespace RRRPG
                 picWeaponSelectBow.Visible = true;
                 lblWeaponSelectBow.Visible = true;
             }
-
+            if (numofgames > 4)
+            {
+                picWeaponSelectSaber.Visible = true;
+                lblWeaponSelectSaber.Visible = true;
+            }
+            
         }
 
         private void btnDoIt_Click(object sender, EventArgs e)
@@ -442,13 +447,13 @@ namespace RRRPG
         private void pictureBoxRandom_Click(object sender, EventArgs e)
         {
             int randIndex;
-            if (numofgames < 5)
+            if (numofgames < 6)
             {
                 randIndex = rnd.Next(numofgames + 1);
             }
             else
             {
-                randIndex = rnd.Next(5);
+                randIndex = rnd.Next(6);
             }
             switch (randIndex)
             {
@@ -466,6 +471,9 @@ namespace RRRPG
                     break;
                 case 4:
                     SelectWeapon(WeaponType.BOW);
+                    break;
+                case 5:
+                    SelectWeapon(WeaponType.SABER);
                     break;
                 default:
                     SelectWeapon(WeaponType.MAGIC_WAND);
