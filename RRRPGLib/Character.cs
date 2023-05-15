@@ -423,9 +423,30 @@ public class Character {
         return c;
 
     }
+private static Character MakeSaberPlayer()
+    {
+        Character c = new Character();
+        c.Stats = new(luck: 0.3f, health: 100, reflex: 0.2f);
+        c.imgMap = new()
+        {
+            {ImgState.IDLE, Resources.GetObject("Img_Luke_Idle") as Bitmap },
+            {ImgState.NO_WEAPON, Resources.GetObject("Img_Luke_Idle") as Bitmap },
+            {ImgState.READY, Resources.GetObject("Img_Luke_Ready") as Bitmap },
+            {ImgState.KILL, Resources.GetObject("Img_Luke_Death") as Bitmap },
+        };
+        c.dialogMap = new() {
+            {TalkState.TALK_SMACK, ("THAT CAN'T BE TRUE", null) },
+            {TalkState.SAY_OW, ("", null) },
+            {TalkState.BONED, ("See you around, Father", null) },
+            {TalkState.GUN_WENT_OFF, ("Let go of your hatred", null) },
+            {TalkState.SURVIVED, ("I feel the good in you", null) },
+        };
+        return c;
+
+    }
 
 
-  private void Say(string dialog) {
+    private void Say(string dialog) {
     Say((dialog, null));
   }
 
