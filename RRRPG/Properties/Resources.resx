@@ -118,20 +118,8 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="Gif_Koolaid_Ready" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Gif_Koolaid_Ready.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Gif_Putin_Wall" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Gif_Putin_Wall.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Gif_Spongebob_Death" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Gif_Spongebob_Death.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Gif_Spongebob_Shot" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Gif_Spongebob_Shot.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="Gif_Yoshi_Death" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Gif_Yoshi_Death.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+    <value>..\Data\Images\Gif_Yoshi_Death.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Icon_Form_Header" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\data\icons\icon_form_header.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -154,6 +142,99 @@
   <data name="Img_Bow" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\data\images\img_bow.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="Img_Cork_Gun" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\data\images\img_cork_gun.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Img_Title_Play_Button" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\data\images\img_title_play_button.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Snd_Bender_Laugh" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\data\audio\snd_bender_laugh.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="Mus_Title_Bg_Music" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\data\audio\mus_title_bg_music.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="Img_Magic_Wand" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\data\images\img_magic_wand.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Img_Nerf_Revolver" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\data\images\img_nerf_revolver.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="IMG_Putin_Ready" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\IMG_Putin_Ready.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Img_Shadow_Idle" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\data\images\img_shadow_idle.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Img_Title" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\data\images\img_title.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Img_Water_Gun" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\data\images\img_water_gun.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Snd_Yoshi_Death" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Data\Audio\Snd_Yoshi_Death.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="Snd_Koolaid_Intro" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Snd_Koolaid_Intro.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="Img_Wizard_Idle" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\data\images\img_wizard_idle.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Img_Wizard_Kill" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\data\images\img_wizard_kill.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Mus_Title_Bg_Music_2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\data\audio\mus_title_bg_music_2.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="Snd_Bender_ImBoned" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\data\audio\snd_bender_imboned.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="Img_FireGoblin_Kill" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\data\images\img_firegoblin_kill.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Snd_Bender_OhMyGod" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\data\audio\snd_bender_ohmygod.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="Img_Yoshi_NoWeapon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Data\Images\Img_Yoshi_NoWeapon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Img_Wizard_NoWeapon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\data\images\img_wizard_noweapon.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Img_Yoshi_Idle" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Data\Images\Img_Yoshi_Idle.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="IMG_Putin_NoWeapon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Data\Images\IMG_Putin_NoWeapon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Snd_Bender_BiteMyShinyMetalAss" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\data\audio\snd_bender_bitemyshinymetalass.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="Snd_Yoshi_Intro" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Data\Audio\Snd_Yoshi_Intro.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="Img_FireGoblin_Ready" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\data\images\img_firegoblin_ready.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Img_Wizard_Ready" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\data\images\img_wizard_ready.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Mus_Title_Bg_Music_3" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\data\audio\mus_title_bg_music_3.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="Img_FireGoblin_NoWeapon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\data\images\img_firegoblin_noweapon.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="EVLyO8VVAAIt1ru" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\EVLyO8VVAAIt1ru.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Snd_Yoshi_mlem" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Snd_Yoshi_mlem.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="Gif_Koolaid_Ready" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Gif_Koolaid_Ready.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="Img_Bowser_Death" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Img_Bowser_Death.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -163,23 +244,17 @@
   <data name="Img_Bowser_Ready" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Img_Bowser_Ready.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Img_Cork_Gun" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\data\images\img_cork_gun.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="Img_FireGoblin_Idle" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\data\images\img_firegoblin_idle.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+    <value>..\Resources\Img_FireGoblin_Idle.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Img_FireGoblin_Kill" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\data\images\img_firegoblin_kill.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Img_FireGoblin_Kill1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Img_FireGoblin_Kill.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Img_FireGoblin_NoWeapon" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\data\images\img_firegoblin_noweapon.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Img_FireGoblin_NoWeapon1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Img_FireGoblin_NoWeapon.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Img_FireGoblin_Ready" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\data\images\img_firegoblin_ready.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Img_Koolaid_Death" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Img_Koolaid_Death.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Img_FireGoblin_Ready1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Img_FireGoblin_Ready.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Img_Koolaid_Idle" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Img_Koolaid_Idle.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -187,35 +262,32 @@
   <data name="Img_Koolaid_NoWeapon" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Img_Koolaid_NoWeapon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Img_Magic_Wand" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\data\images\img_magic_wand.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Img_Neo_Death" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Img_Neo_Death.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="Img_Neo_NoWeapon" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Img_Neo_NoWeapon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Img_Neo_Ready" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Img_Neo_Ready.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Img_Nerf_Revolver" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\data\images\img_nerf_revolver.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Img_Nerf_Revolver1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Img_Nerf_Revolver.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="IMG_Putin_Idle" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\IMG_Putin_Idle.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="IMG_Putin_NoWeapon" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Data\Images\IMG_Putin_NoWeapon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="IMG_Putin_NoWeapon1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\IMG_Putin_NoWeapon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="IMG_Putin_Ready" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\IMG_Putin_Ready.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="IMG_Putin_NoWeapon__1_" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\IMG_Putin_NoWeapon (1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Img_Shadow_Idle" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\data\images\img_shadow_idle.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Img_Shadow_Idle1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Img_Shadow_Idle.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Img_Spongebob_NoWeapon" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Img_Spongebob_NoWeapon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Img_Spongebob_Ready" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Img_Spongebob_Ready.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Img_Spongebob_Spatula_Ready" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Img_Spongebob_Spatula_Ready.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -229,56 +301,38 @@
   <data name="Img_Stewie_Ready" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Img_Stewie_Ready.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Img_Title" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\data\images\img_title.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Img_Title1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Img_Title.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Img_Title_Play_Button" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\data\images\img_title_play_button.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Img_Title_Play_Button1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Img_Title_Play_Button.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Img_Water_Gun" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\data\images\img_water_gun.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Img_Water_Gun1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Img_Water_Gun.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Img_Wizard_Idle" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\data\images\img_wizard_idle.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Img_Wizard_Idle1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Img_Wizard_Idle.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Img_Wizard_Kill" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\data\images\img_wizard_kill.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Img_Wizard_Kill1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Img_Wizard_Kill.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Img_Wizard_NoWeapon" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\data\images\img_wizard_noweapon.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Img_Wizard_NoWeapon1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Img_Wizard_NoWeapon.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Img_Wizard_Ready" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\data\images\img_wizard_ready.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Img_Wizard_Ready1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Img_Wizard_Ready.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Img_Yoshi_Idle" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Data\Images\Img_Yoshi_Idle.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Img_Yoshi_Idle1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Img_Yoshi_Idle.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Img_Yoshi_NoWeapon" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Data\Images\Img_Yoshi_NoWeapon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Img_Yoshi_NoWeapon1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Img_Yoshi_NoWeapon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Img_Yoshi_Ready" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Data\Images\Img_Yoshi_Ready.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+    <value>..\Resources\Img_Yoshi_Ready.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Mus_Title_Bg_Music" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\data\audio\mus_title_bg_music.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="Mus_Title_Bg_Music_2" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\data\audio\mus_title_bg_music_2.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="Mus_Title_Bg_Music_3" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\data\audio\mus_title_bg_music_3.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="Snd_Bender_BiteMyShinyMetalAss" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\data\audio\snd_bender_bitemyshinymetalass.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="Snd_Bender_ImBoned" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\data\audio\snd_bender_imboned.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="Snd_Bender_Laugh" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\data\audio\snd_bender_laugh.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="Snd_Bender_OhMyGod" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\data\audio\snd_bender_ohmygod.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="Img_Yoshi_Ready1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Img_Yoshi_Ready.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Snd_Bender_OhMyGod1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Snd_Bender_OhMyGod.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -303,9 +357,6 @@
   </data>
   <data name="Snd_Koolaid_Death" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Snd_Koolaid_Death.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="Snd_Koolaid_Intro" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Snd_Koolaid_Intro.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="Snd_NeoDeath" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Snd_NeoDeath.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -346,13 +397,22 @@
   <data name="Snd_WaterGun" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Snd_WaterGun.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="Snd_Yoshi_Death" type="System.Resources.ResXFileRef, System.Windows.Forms">
+  <data name="Snd_Yoshi_Death1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Snd_Yoshi_Death.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="Snd_Yoshi_Intro" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Data\Audio\Snd_Yoshi_Intro.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="Img_Koolaid_Death" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Img_Koolaid_Death.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Snd_Yoshi_mlem" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Snd_Yoshi_mlem.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="Img_Neo_Death" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Img_Neo_Death.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Img_Luke_Death" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Img_Luke_Death.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Img_Luke_Idle" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Img_Luke_Idle.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Img_Luke_Ready" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Img_Luke_Ready.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

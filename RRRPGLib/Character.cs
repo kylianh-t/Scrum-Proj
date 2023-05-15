@@ -1,6 +1,7 @@
 ﻿using System.Drawing;
 using System.Windows.Forms;
 using static RRRPGLib.ResourcesRef;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 using ImgState = RRRPGLib.CharacterImgStateType;
 using TalkState = RRRPGLib.CharacterTalkStateType;
 
@@ -68,15 +69,15 @@ public class Character {
     c.Shutup();
     return c;
   }
-
-  /// <summary>
-  /// Create a player with the appropriate animations and dialog for the given weapon
-  /// </summary>
-  /// <param name="weaponType">Type of weapon to create the player for</param>
-  /// <param name="pic">PictureBox to hold the image of the player</param>
-  /// <param name="lblTalk">Label to hold the player's dialog</param>
-  /// <returns></returns>
-  public static Character MakePlayer(WeaponType weaponType, PictureBox pic, Label lblTalk) {
+    
+    /// <summary>
+    /// Create a player with the appropriate animations and dialog for the given weapon
+    /// </summary>
+    /// <param name="weaponType">Type of weapon to create the player for</param>
+    /// <param name="pic">PictureBox to hold the image of the player</param>
+    /// <param name="lblTalk">Label to hold the player's dialog</param>
+    /// <returns></returns>
+    public static Character MakePlayer(WeaponType weaponType, PictureBox pic, Label lblTalk) {
     Character c = weaponType switch {
       WeaponType.MAGIC_WAND => MakeMagicWandPlayer(),
       WeaponType.NERF_REVOLVER => MakeNerfRevolverPlayer(),
@@ -114,11 +115,14 @@ public class Character {
     return false;
   }
 
-  /// <summary>
-  /// Allows the character to say the dialog that goes with the <see cref="TalkState.TALK_SMACK"/> state
-  /// </summary>
-  public void SaySmack() => Say(dialogMap[TalkState.TALK_SMACK]);
-
+    /// <summary>
+    /// Allows the character to say the dialog that goes with the <see cref="TalkState.TALK_SMACK"/> state
+    /// </summary>
+    public void SaySmack()
+    {
+        Say(dialogMap[TalkState.TALK_SMACK]);
+        Console.WriteLine(dialogMap);
+    }
   /// <summary>
   /// Allows the character to say the dialog that goes with the <see cref="TalkState.SAY_OW"/> state
   /// </summary>
@@ -261,10 +265,12 @@ public class Character {
     };
     return c;
   }
-
-  private static Character MakeMagicWandPlayer() {
+    
+  public static Character MakeMagicWandPlayer() {
     Character c = new Character();
-    c.Stats = new(luck: 0.5f, health: 100, reflex: 0.3f);
+        c.Stats = new(luck: 0.5f, health: 100, reflex: 0.3f);
+        
+
     c.imgMap = new() {
       {ImgState.IDLE, Resources.GetObject("Img_Bender_Idle") as Bitmap },
       {ImgState.NO_WEAPON, Resources.GetObject("Img_Bender_Idle") as Bitmap },
@@ -327,17 +333,18 @@ public class Character {
     };
     c.dialogMap = new() {
       {TalkState.TALK_SMACK, ("", Resources.GetStream("Snd_Stewie_Hey")) },
-      {TalkState.SAY_OW, ("", Resources.GetStream("Snd_Stewie_Shot")) },
+      {TalkState.SAY_OW, ("", null) },
       {TalkState.BONED, ("AAAAAAAAAAAAAAAAAA!", Resources.GetStream("Snd_Stewie_Death")) },
-      {TalkState.GUN_WENT_OFF, ("", Resources.GetStream("Snd_Gunshot")) },
+      {TalkState.GUN_WENT_OFF, ("", Resources.GetStream("Snd_Stewie_Shot")) },
       {TalkState.SURVIVED, ("I'm back for more", Resources.GetStream("Snd_Stewie_Hey")) },
     };
     return c;
   }
   private static Character MakeWaterGunPlayer() {
     Character c = new Character();
-    c.Stats = new(luck: 0.5f, health: 100, reflex: 0.3f);
-    c.imgMap = new() {
+        c.Stats = new(luck: 0.5f, health: 100, reflex: 0.3f);
+       
+        c.imgMap = new() {
       {ImgState.IDLE, Resources.GetObject("Img_Bender_Idle") as Bitmap },
       {ImgState.NO_WEAPON, Resources.GetObject("Img_Bender_Idle") as Bitmap },
       {ImgState.READY, Resources.GetObject("Img_Bender_Ready_WaterGun") as Bitmap },
@@ -374,15 +381,37 @@ public class Character {
         return c;
 
     }
+private static Character MakeSaberPlayer()
+    {
+        Character c = new Character();
+        c.Stats = new(luck: 0.3f, health: 100, reflex: 0.2f);
+        c.imgMap = new()
+        {
+            {ImgState.IDLE, Resources.GetObject("Img_Luke_Idle") as Bitmap },
+            {ImgState.NO_WEAPON, Resources.GetObject("Img_Luke_Idle") as Bitmap },
+            {ImgState.READY, Resources.GetObject("Img_Luke_Ready") as Bitmap },
+            {ImgState.KILL, Resources.GetObject("Img_Luke_Death") as Bitmap },
+        };
+        c.dialogMap = new() {
+            {TalkState.TALK_SMACK, ("THAT CAN'T BE TRUE", null) },
+            {TalkState.SAY_OW, ("", null) },
+            {TalkState.BONED, ("See you around, Father", null) },
+            {TalkState.GUN_WENT_OFF, ("Let go of your hatred", null) },
+            {TalkState.SURVIVED, ("I feel the good in you", null) },
+        };
+        return c;
+
+    }
 
 
-  private void Say(string dialog) {
+    private void Say(string dialog) {
     Say((dialog, null));
   }
-  private void Say((string dialog, UnmanagedMemoryStream audio) msg) {
+
+    private void Say((string dialog, UnmanagedMemoryStream audio) msg) {
     lblTalk.Text = msg.dialog;
     lblTalk.Visible = true;
-    if (msg.audio is not null) {
+        if (msg.audio is not null) {
       SoundManager.Play(msg.audio);
     }
   }
