@@ -85,7 +85,7 @@ public class Character {
       WeaponType.BOW => MakeBowPlayer(),
       WeaponType.CORK_GUN => MakeCorkGunPlayer(),
       WeaponType.WATER_GUN => MakeWaterGunPlayer(),
-      WeaponType.SABER => MakeSaberPlayer(),
+    //  WeaponType.SABER => MakeSaberPlayer(),
     };
     c.pic = pic;
     c.lblTalk = lblTalk;
@@ -307,27 +307,7 @@ public class Character {
     };
     return c;
   }
-    public static Character MakeSaberPlayer()
-    {
-        Character c = new Character();
-        c.Stats = new(luck: 0.5f, health: 100, reflex: 0.3f);
-
-
-        c.imgMap = new() {
-      {ImgState.IDLE, Resources.GetObject("Img_Bender_Idle") as Bitmap },
-      {ImgState.NO_WEAPON, Resources.GetObject("Img_Bender_Idle") as Bitmap },
-      {ImgState.READY, Resources.GetObject("Img_Bender_Ready_MagicWand") as Bitmap },
-      {ImgState.KILL, Resources.GetObject("Img_Bender_Kill_MagicWand") as Bitmap },
-    };
-        c.dialogMap = new() {
-      {TalkState.TALK_SMACK, ("Bite my shiny metal ass!", Resources.GetStream("Snd_Bender_BiteMyShinyMetalAss")) },
-      {TalkState.SAY_OW, ("Ow ow ow!!!", null) },
-      {TalkState.BONED, ("Oh, I'm boned!", Resources.GetStream("Snd_Bender_ImBoned")) },
-      {TalkState.GUN_WENT_OFF, ("Oh My God!", Resources.GetStream("Snd_Bender_OhMyGod")) },
-      {TalkState.SURVIVED, ("Hahahaha!", Resources.GetStream("Snd_Bender_Laugh")) },
-    };
-        return c;
-    }
+    
     private static Character MakeNerfRevolverPlayer() {
     Character c = new Character();
     c.Stats = new(luck: 0.2f, health: 101, reflex: 0.7f);
