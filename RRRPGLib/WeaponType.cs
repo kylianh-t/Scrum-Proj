@@ -31,4 +31,9 @@ public enum WeaponType {
   /// The fire goblin carries this.
   /// </summary>
   WATER_GUN,
+    /// <summary>
+    /// Sprays freezing cold water on its victim.
+    /// The fire goblin carries this.
+    /// </summary>
+    SABER,
 }

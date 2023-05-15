@@ -3,6 +3,7 @@ using RRRPGLib;
 using System.Drawing.Text;
 using System.Media;
 using System.Windows.Forms;
+using NAudio.Wave;
 
 namespace RRRPG
 {
@@ -10,25 +11,45 @@ namespace RRRPG
     {
         public int Myscore = 0;
         private SoundPlayer soundPlayer;
+        int flag = 1;
+        private WaveOutEvent waveOut;
+        private WaveFileReader waveFileReader;
         private int state;
         private Character player;
         private Character opponent;
         private Weapon weapon;
+        private int numofgames = 0;
+        private List<string> rand_Names = new List<string> { "Neo", "Sakura", "Voldemort", "Stewie", "Your Mom", "My Mom", "Danny Phantom", "Harry Potter", "Sasuke", "Naruto", "Sephiroth", "Clark Kent", "Batman", "Joker", "JigglyPuff", "Timmy Turner", "SpongeBob", "Eren Yeager", "Henry", "Curious George", "Pikachu", "Jesus", "Ash", "Link", "Ganondorf", "Bayonetta", "Captain Falcon", "Mario", "Nes", "Cloud" };
+        static Random rnd = new Random();
         private Dictionary<WeaponType, (PictureBox pic, Label lbl)> weaponSelectMap;
 
         public FrmMain()
         {
             InitializeComponent();
             FormManager.openForms.Add(this);
+            volumeSlider.Hide();
         }
 
         private void FrmMain_Load(object sender, EventArgs e)
         {
-            soundPlayer = new SoundPlayer(Resources.Mus_Title_Bg_Music);
-            soundPlayer.PlayLooping();
+            waveOut = new WaveOutEvent();
+            waveFileReader = new WaveFileReader(Resources.Mus_Title_Bg_Music);
+            waveOut.Init(waveFileReader);
+            waveOut.Play();
+            waveOut.Volume = 1;
             btnDoIt.Visible = false;
             lblOpponentSpeak.Visible = false;
             lblPlayerSpeak.Visible = false;
+            picWeaponSelectBow.Visible = false;
+            picWeaponSelectCorkGun.Visible = false;
+            picWeaponSelectWaterGun.Visible = false;
+            picWeaponSelectNerfRev.Visible = false;
+            //picWeaponSelectLightSaber.Visible = false;
+            //lblWeaponSelectLightSaber.Visible = false;
+            lblWeaponSelectBow.Visible = false;
+            lblWeaponSelectCorkGun.Visible = false;
+            lblWeaponSelectWaterGun.Visible = false;
+            lblWeaponSelectNerfRev.Visible = false;
             weapon = Weapon.MakeWeapon(WeaponType.MAGIC_WAND);
             state = -1;
             weaponSelectMap = new() {
@@ -37,13 +58,13 @@ namespace RRRPG
         {WeaponType.WATER_GUN, (picWeaponSelectWaterGun, lblWeaponSelectWaterGun) },
         {WeaponType.MAGIC_WAND, (picWeaponSelectMagicWand, lblWeaponSelectMagicWand) },
         {WeaponType.NERF_REVOLVER, (picWeaponSelectNerfRev, lblWeaponSelectNerfRev) },
+        {WeaponType.SABER, (picWeaponSelectSaber, lblWeaponSelectSaber) },
       };
             SelectWeapon(WeaponType.MAGIC_WAND);
         }
 
         private void btnStart_Click(object sender, EventArgs e)
         {
-            soundPlayer.Stop();
             player.Shutup();
             player.ShowIdle();
             opponent.ShowIdle();
@@ -52,6 +73,9 @@ namespace RRRPG
             tmrStateMachine.Interval = 3500;
             tmrStateMachine.Enabled = true;
             state = 0;
+            lblOpponent.Text = rand_Names[rnd.Next(rand_Names.Count)];
+            lblPlayer.Text = rand_Names[rnd.Next(rand_Names.Count)];
+            numofgames++;
             panWeaponSelect.Visible = false;
             Shop.Visible = false;
         }
@@ -88,6 +112,7 @@ namespace RRRPG
                 tmrPlayMusicAfterGameOver.Enabled = true;
                 panWeaponSelect.Visible = true;
                 state = -1;
+                Unlock_Weapon();
                 tmrStateMachine.Enabled = false;
 
             }
@@ -124,10 +149,35 @@ namespace RRRPG
                 panWeaponSelect.Visible = true;
                 state = -1;
                 tmrStateMachine.Enabled = false;
+                Unlock_Weapon();
                 Myscore += 5;
                 //when bender's apponent dies, he gets 5 points
                 Score.Text = String.Format("{0}", Myscore);
             }
+        }
+        private void Unlock_Weapon()
+        {
+            if (numofgames > 0)
+            {
+                picWeaponSelectCorkGun.Visible = true;
+                lblWeaponSelectCorkGun.Visible = true;
+            }
+            if (numofgames > 1)
+            {
+                picWeaponSelectWaterGun.Visible = true;
+                lblWeaponSelectWaterGun.Visible = true;
+            }
+            if (numofgames > 2)
+            {
+                picWeaponSelectNerfRev.Visible = true;
+                lblWeaponSelectNerfRev.Visible = true;
+            }
+            if (numofgames > 3)
+            {
+                picWeaponSelectBow.Visible = true;
+                lblWeaponSelectBow.Visible = true;
+            }
+
         }
 
         private void btnDoIt_Click(object sender, EventArgs e)
@@ -200,7 +250,10 @@ namespace RRRPG
         {
             SelectWeapon(WeaponType.BOW);
         }
-
+        private void pictureBox2_Click(object sender, EventArgs e)
+        {
+            SelectWeapon(WeaponType.SABER);
+        }
         private void FrmMain_FormClosed(object sender, FormClosedEventArgs e)
         {
             FormManager.openForms.Remove(this);
@@ -211,7 +264,7 @@ namespace RRRPG
         {
             if (btnStart.Visible)
             {
-                soundPlayer.PlayLooping();
+
             }
             tmrPlayMusicAfterGameOver.Enabled = false;
         }
@@ -368,6 +421,63 @@ namespace RRRPG
         private void label1_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            flag *= -1;
+            if (flag == 1)
+                volumeSlider.Hide();
+            else
+                volumeSlider.Show();
+        }
+
+        private void volumeSlider_Scroll(object sender, EventArgs e)
+        {
+            waveOut.Volume = (float)volumeSlider.Value / 100f;
+        }
+        private void pictureBoxRandom_Click(object sender, EventArgs e)
+        {
+            int randIndex;
+            if (numofgames < 5)
+            {
+                randIndex = rnd.Next(numofgames + 1);
+            }
+            else
+            {
+                randIndex = rnd.Next(5);
+            }
+            switch (randIndex)
+            {
+                case 0:
+                    SelectWeapon(WeaponType.MAGIC_WAND);
+                    break;
+                case 1:
+                    SelectWeapon(WeaponType.CORK_GUN);
+                    break;
+                case 2:
+                    SelectWeapon(WeaponType.WATER_GUN);
+                    break;
+                case 3:
+                    SelectWeapon(WeaponType.NERF_REVOLVER);
+                    break;
+                case 4:
+                    SelectWeapon(WeaponType.BOW);
+                    break;
+                default:
+                    SelectWeapon(WeaponType.MAGIC_WAND);
+                    break;
+            }
+        }
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            waveOut.Stop();
+            waveOut.Dispose();
+            waveFileReader.Dispose();
+            waveOut = new WaveOutEvent();
+            waveFileReader = new WaveFileReader(Resources.Mus_Title_Bg_Music_3);
+            waveOut.Init(waveFileReader);
+            waveOut.Play();
         }
 
 

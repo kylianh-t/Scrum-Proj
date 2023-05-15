@@ -62,6 +62,7 @@ public class Character {
       WeaponType.BOW => MakeBowOpponent(),
       WeaponType.CORK_GUN => MakeCorkGunOpponent(),
       WeaponType.WATER_GUN => MakeWaterGunOpponent(),
+      WeaponType.SABER => MakeSaberOpponent(),
     };
     c.pic = pic;
     c.lblTalk = lblTalk;
@@ -84,6 +85,7 @@ public class Character {
       WeaponType.BOW => MakeBowPlayer(),
       WeaponType.CORK_GUN => MakeCorkGunPlayer(),
       WeaponType.WATER_GUN => MakeWaterGunPlayer(),
+    //  WeaponType.SABER => MakeSaberPlayer(),
     };
     c.pic = pic;
     c.lblTalk = lblTalk;
@@ -211,7 +213,26 @@ public class Character {
     };
     return c;
   }
-  private static Character MakeBowOpponent() {
+    private static Character MakeSaberOpponent()
+    {
+        Character c = new Character();
+        c.Stats = new(luck: 0.2f, health: 120, reflex: 0.1f);
+        c.imgMap = new() {
+      {ImgState.IDLE, Resources.GetObject("Img_Darth_Vader_Idle") as Bitmap },
+      {ImgState.NO_WEAPON, Resources.GetObject("Img_Darth_Vader_NoWeapon") as Bitmap },
+      {ImgState.READY, Resources.GetObject("Img_Darth_Vader_Ready") as Bitmap },
+      {ImgState.KILL, Resources.GetObject("Img_Darth_Vader_Kill") as Bitmap },
+    };
+        c.dialogMap = new() {
+      {TalkState.TALK_SMACK, ("I am your Father!", Resources.GetStream("Snd_Koolaid_Intro")) },
+      {TalkState.SAY_OW, ("Only Hatred can Destroy me!", null) },
+      {TalkState.BONED, ("I dislike sand", null) },
+      {TalkState.GUN_WENT_OFF, ("This will be a day long remembered", Resources.GetStream("Snd_Koolaid_Death")) },
+      {TalkState.SURVIVED, ("You don't know the power of the Dark Side!", Resources.GetStream("Snd_Koolaid_Intro")) },
+    };
+        return c;
+    }
+    private static Character MakeBowOpponent() {
     Character c = new Character();
     c.Stats = new(luck: 0.0f, health: 100, reflex: 0.5f);
     c.imgMap = new() {
@@ -286,7 +307,8 @@ public class Character {
     };
     return c;
   }
-  private static Character MakeNerfRevolverPlayer() {
+    
+    private static Character MakeNerfRevolverPlayer() {
     Character c = new Character();
     c.Stats = new(luck: 0.2f, health: 101, reflex: 0.7f);
     c.imgMap = new() {
@@ -381,9 +403,30 @@ public class Character {
         return c;
 
     }
+private static Character MakeSaberPlayer()
+    {
+        Character c = new Character();
+        c.Stats = new(luck: 0.3f, health: 100, reflex: 0.2f);
+        c.imgMap = new()
+        {
+            {ImgState.IDLE, Resources.GetObject("Img_Luke_Idle") as Bitmap },
+            {ImgState.NO_WEAPON, Resources.GetObject("Img_Luke_Idle") as Bitmap },
+            {ImgState.READY, Resources.GetObject("Img_Luke_Ready") as Bitmap },
+            {ImgState.KILL, Resources.GetObject("Img_Luke_Death") as Bitmap },
+        };
+        c.dialogMap = new() {
+            {TalkState.TALK_SMACK, ("THAT CAN'T BE TRUE", null) },
+            {TalkState.SAY_OW, ("", null) },
+            {TalkState.BONED, ("See you around, Father", null) },
+            {TalkState.GUN_WENT_OFF, ("Let go of your hatred", null) },
+            {TalkState.SURVIVED, ("I feel the good in you", null) },
+        };
+        return c;
+
+    }
 
 
-  private void Say(string dialog) {
+    private void Say(string dialog) {
     Say((dialog, null));
   }
 
