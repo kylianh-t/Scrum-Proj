@@ -224,11 +224,11 @@ public class Character {
       {ImgState.KILL, Resources.GetObject("Img_Darth_Vader_Kill") as Bitmap },
     };
         c.dialogMap = new() {
-      {TalkState.TALK_SMACK, ("I am your Father!", Resources.GetStream("Snd_Koolaid_Intro")) },
+      {TalkState.TALK_SMACK, ("I am your Father!", Resources.GetStream(null)) },
       {TalkState.SAY_OW, ("Only Hatred can Destroy me!", null) },
       {TalkState.BONED, ("I dislike sand", null) },
-      {TalkState.GUN_WENT_OFF, ("This will be a day long remembered", Resources.GetStream("Snd_Koolaid_Death")) },
-      {TalkState.SURVIVED, ("You don't know the power of the Dark Side!", Resources.GetStream("Snd_Koolaid_Intro")) },
+      {TalkState.GUN_WENT_OFF, ("This will be a day long remembered", Resources.GetStream(null)) },
+      {TalkState.SURVIVED, ("You don't know the power of the Dark Side!", Resources.GetStream(null)) },
     };
         return c;
     }
