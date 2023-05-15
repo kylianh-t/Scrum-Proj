@@ -85,7 +85,7 @@ public class Character {
       WeaponType.BOW => MakeBowPlayer(),
       WeaponType.CORK_GUN => MakeCorkGunPlayer(),
       WeaponType.WATER_GUN => MakeWaterGunPlayer(),
-    //  WeaponType.SABER => MakeSaberPlayer(),
+      WeaponType.SABER => MakeSaberPlayer(),
     };
     c.pic = pic;
     c.lblTalk = lblTalk;
@@ -224,11 +224,11 @@ public class Character {
       {ImgState.KILL, Resources.GetObject("Img_Darth_Vader_Kill") as Bitmap },
     };
         c.dialogMap = new() {
-      {TalkState.TALK_SMACK, ("I am your Father!", Resources.GetStream(null)) },
+      {TalkState.TALK_SMACK, ("I am your Father!", null) },
       {TalkState.SAY_OW, ("Only Hatred can Destroy me!", null) },
       {TalkState.BONED, ("I dislike sand", null) },
-      {TalkState.GUN_WENT_OFF, ("This will be a day long remembered", Resources.GetStream(null)) },
-      {TalkState.SURVIVED, ("You don't know the power of the Dark Side!", Resources.GetStream(null)) },
+      {TalkState.GUN_WENT_OFF, ("This will be a day long remembered", null) },
+      {TalkState.SURVIVED, ("You don't know the power of the Dark Side!", null) },
     };
         return c;
     }
