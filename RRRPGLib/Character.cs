@@ -218,17 +218,17 @@ public class Character {
         Character c = new Character();
         c.Stats = new(luck: 0.2f, health: 120, reflex: 0.1f);
         c.imgMap = new() {
-      {ImgState.IDLE, Resources.GetObject("Img_Darth_Vader_Kill") as Bitmap },
-      {ImgState.NO_WEAPON, Resources.GetObject("Img_Darth_Vader_Kill") as Bitmap },
-      {ImgState.READY, Resources.GetObject("Img_Darth_Vader_Kill") as Bitmap },
+      {ImgState.IDLE, Resources.GetObject("Img_Darth_Vader_Idle") as Bitmap },
+      {ImgState.NO_WEAPON, Resources.GetObject("Img_Darth_Vader_NoWeapon") as Bitmap },
+      {ImgState.READY, Resources.GetObject("Img_Darth_Vader_Ready") as Bitmap },
       {ImgState.KILL, Resources.GetObject("Img_Darth_Vader_Kill") as Bitmap },
     };
         c.dialogMap = new() {
-      {TalkState.TALK_SMACK, ("( ͡° ͜ʖ ͡°)", Resources.GetStream("Snd_Koolaid_Intro")) },
-      {TalkState.SAY_OW, ("", null) },
-      {TalkState.BONED, ("Ohhhhh nooooooooo", null) },
-      {TalkState.GUN_WENT_OFF, ("", Resources.GetStream("Snd_Koolaid_Death")) },
-      {TalkState.SURVIVED, ("", Resources.GetStream("Snd_Koolaid_Intro")) },
+      {TalkState.TALK_SMACK, ("I am your Father!", Resources.GetStream("Snd_Koolaid_Intro")) },
+      {TalkState.SAY_OW, ("Only Hatred can Destroy me!", null) },
+      {TalkState.BONED, ("I dislike sand", null) },
+      {TalkState.GUN_WENT_OFF, ("This will be a day long remembered", Resources.GetStream("Snd_Koolaid_Death")) },
+      {TalkState.SURVIVED, ("You don't know the power of the Dark Side!", Resources.GetStream("Snd_Koolaid_Intro")) },
     };
         return c;
     }
