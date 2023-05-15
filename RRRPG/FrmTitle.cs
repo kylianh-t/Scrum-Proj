@@ -10,6 +10,7 @@ public partial class FrmTitle : Form
     int flag = 1;
     private WaveOutEvent waveOut;
     private WaveFileReader waveFileReader;
+
     public FrmTitle()
     {
         InitializeComponent();
@@ -32,7 +33,8 @@ public partial class FrmTitle : Form
         waveFileReader = new WaveFileReader(Resources.Mus_Title_Bg_Music_3);
         waveOut.Init(waveFileReader);
         waveOut.Play();
-        waveOut.Volume = 1;
+        waveOut.Volume = .01f;
+        volumeSlider.Value = (int)waveOut.Volume;
         FormManager.openForms.Add(this);
     }
 
@@ -51,11 +53,14 @@ public partial class FrmTitle : Form
             volumeSlider.Hide();
         else
             volumeSlider.Show();
+
     }
 
     private void volumeSlider_Scroll(object sender, EventArgs e)
     {
-        waveOut.Volume = (float)volumeSlider.Value / 100f;
+
+        float v = volumeSlider.Value / 100f;
+        waveOut.Volume = v;
     }
 
     private void timer1_Tick(object sender, EventArgs e)

@@ -223,16 +223,6 @@ namespace RRRPG.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Img_Darth_Vader_NoWeapon {
-            get {
-                object obj = ResourceManager.GetObject("Img_Darth_Vader_NoWeapon", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
         internal static System.Drawing.Bitmap Img_Darth_Vader_Ready {
             get {
                 object obj = ResourceManager.GetObject("Img_Darth_Vader_Ready", resourceCulture);
@@ -804,6 +794,15 @@ namespace RRRPG.Properties {
         internal static System.IO.UnmanagedMemoryStream Mus_Title_Bg_Music_3 {
             get {
                 return ResourceManager.GetStream("Mus_Title_Bg_Music_3", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
+        /// </summary>
+        internal static System.IO.UnmanagedMemoryStream Mus_Title_Bg_Music1 {
+            get {
+                return ResourceManager.GetStream("Mus_Title_Bg_Music1", resourceCulture);
             }
         }
         

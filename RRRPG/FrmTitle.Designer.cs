@@ -45,10 +45,9 @@
             btnPlay.FlatStyle = FlatStyle.Popup;
             btnPlay.Font = new Font("Segoe UI", 27.75F, FontStyle.Bold, GraphicsUnit.Point);
             btnPlay.ForeColor = Color.Black;
-            btnPlay.Location = new Point(75, 688);
-            btnPlay.Margin = new Padding(3, 4, 3, 4);
+            btnPlay.Location = new Point(75, 516);
             btnPlay.Name = "btnPlay";
-            btnPlay.Size = new Size(269, 101);
+            btnPlay.Size = new Size(269, 76);
             btnPlay.TabIndex = 0;
             btnPlay.Text = "Play";
             btnPlay.UseVisualStyleBackColor = false;
@@ -59,9 +58,10 @@
             button1.BackColor = Color.Transparent;
             button1.BackgroundImage = (Image)resources.GetObject("button1.BackgroundImage");
             button1.FlatStyle = FlatStyle.Popup;
-            button1.Location = new Point(12, 903);
+            button1.Location = new Point(12, 664);
+            button1.Margin = new Padding(3, 2, 3, 2);
             button1.Name = "button1";
-            button1.Size = new Size(72, 52);
+            button1.Size = new Size(72, 50);
             button1.TabIndex = 3;
             button1.UseVisualStyleBackColor = false;
             button1.Click += button1_Click;
@@ -69,10 +69,11 @@
             // volumeSlider
             // 
             volumeSlider.BackColor = Color.Black;
-            volumeSlider.Location = new Point(90, 903);
+            volumeSlider.Location = new Point(90, 669);
+            volumeSlider.Margin = new Padding(3, 2, 3, 2);
             volumeSlider.Maximum = 100;
             volumeSlider.Name = "volumeSlider";
-            volumeSlider.Size = new Size(269, 56);
+            volumeSlider.Size = new Size(269, 45);
             volumeSlider.TabIndex = 4;
             volumeSlider.Value = 100;
             volumeSlider.Scroll += volumeSlider_Scroll;
@@ -85,18 +86,17 @@
             // 
             // FrmTitle
             // 
-            AutoScaleDimensions = new SizeF(7F, 20F);
+            AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.Black;
             BackgroundImage = Properties.Resources.Img_Title;
             BackgroundImageLayout = ImageLayout.Stretch;
-            ClientSize = new Size(1120, 967);
+            ClientSize = new Size(1120, 725);
             Controls.Add(volumeSlider);
             Controls.Add(button1);
             Controls.Add(btnPlay);
             DoubleBuffered = true;
             Icon = (Icon)resources.GetObject("$this.Icon");
-            Margin = new Padding(3, 4, 3, 4);
             Name = "FrmTitle";
             Text = "Russian Roulette RPG";
             FormClosed += FrmTitle_FormClosed;

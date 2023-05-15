@@ -33,10 +33,11 @@ namespace RRRPG
         private void FrmMain_Load(object sender, EventArgs e)
         {
             waveOut = new WaveOutEvent();
-            waveFileReader = new WaveFileReader(Resources.Mus_Title_Bg_Music);
+            waveFileReader = new WaveFileReader(Resources.Mus_Title_Bg_Music1);
             waveOut.Init(waveFileReader);
             waveOut.Play();
-            waveOut.Volume = 1;
+            waveOut.Volume = .75f;
+            volumeSlider.Value = 75;
             btnDoIt.Visible = false;
             lblOpponentSpeak.Visible = false;
             lblPlayerSpeak.Visible = false;
@@ -272,6 +273,7 @@ namespace RRRPG
         //opens the shop
         private void button1_Click(object sender, EventArgs e)
         {
+            label16.Visible = true;
             btnStart.Visible = false;
             Shop.Visible = false;
             CloseShop.Visible = true;
@@ -296,6 +298,7 @@ namespace RRRPG
 
         private void CloseShop_Click(object sender, EventArgs e)
         {
+            label16.Visible = false;
             btnStart.Visible = true;
             Shop.Visible = true;
             CloseShop.Visible = false;
