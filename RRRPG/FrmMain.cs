@@ -50,6 +50,7 @@ namespace RRRPG
         {WeaponType.WATER_GUN, (picWeaponSelectWaterGun, lblWeaponSelectWaterGun) },
         {WeaponType.MAGIC_WAND, (picWeaponSelectMagicWand, lblWeaponSelectMagicWand) },
         {WeaponType.NERF_REVOLVER, (picWeaponSelectNerfRev, lblWeaponSelectNerfRev) },
+        {WeaponType.SABER, (picWeaponSelectSaber, lblWeaponSelectSaber) },
       };
             SelectWeapon(WeaponType.MAGIC_WAND);
         }
@@ -242,7 +243,10 @@ namespace RRRPG
         {
             SelectWeapon(WeaponType.BOW);
         }
-
+        private void pictureBox2_Click(object sender, EventArgs e)
+        {
+            SelectWeapon(WeaponType.SABER);
+        }
         private void FrmMain_FormClosed(object sender, FormClosedEventArgs e)
         {
             FormManager.openForms.Remove(this);
@@ -445,5 +449,7 @@ namespace RRRPG
                     break;
             }
         }
+
+
     }
 }

@@ -203,6 +203,16 @@ namespace RRRPG.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Img_Darth_Vader_Kill {
+            get {
+                object obj = ResourceManager.GetObject("Img_Darth_Vader_Kill", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Img_FireGoblin_Idle {
             get {
                 object obj = ResourceManager.GetObject("Img_FireGoblin_Idle", resourceCulture);
@@ -386,6 +396,26 @@ namespace RRRPG.Properties {
         internal static System.Drawing.Bitmap IMG_Putin_Ready {
             get {
                 object obj = ResourceManager.GetObject("IMG_Putin_Ready", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Img_Saber {
+            get {
+                object obj = ResourceManager.GetObject("Img_Saber", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Img_Saber1 {
+            get {
+                object obj = ResourceManager.GetObject("Img_Saber1", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

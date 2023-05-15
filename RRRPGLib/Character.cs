@@ -62,6 +62,7 @@ public class Character {
       WeaponType.BOW => MakeBowOpponent(),
       WeaponType.CORK_GUN => MakeCorkGunOpponent(),
       WeaponType.WATER_GUN => MakeWaterGunOpponent(),
+      WeaponType.SABER => MakeSaberOpponent(),
     };
     c.pic = pic;
     c.lblTalk = lblTalk;
@@ -84,6 +85,7 @@ public class Character {
       WeaponType.BOW => MakeBowPlayer(),
       WeaponType.CORK_GUN => MakeCorkGunPlayer(),
       WeaponType.WATER_GUN => MakeWaterGunPlayer(),
+      WeaponType.SABER => MakeSaberPlayer(),
     };
     c.pic = pic;
     c.lblTalk = lblTalk;
@@ -211,7 +213,26 @@ public class Character {
     };
     return c;
   }
-  private static Character MakeBowOpponent() {
+    private static Character MakeSaberOpponent()
+    {
+        Character c = new Character();
+        c.Stats = new(luck: 0.2f, health: 120, reflex: 0.1f);
+        c.imgMap = new() {
+      {ImgState.IDLE, Resources.GetObject("Img_Darth_Vader_Kill") as Bitmap },
+      {ImgState.NO_WEAPON, Resources.GetObject("Img_Darth_Vader_Kill") as Bitmap },
+      {ImgState.READY, Resources.GetObject("Img_Darth_Vader_Kill") as Bitmap },
+      {ImgState.KILL, Resources.GetObject("Img_Darth_Vader_Kill") as Bitmap },
+    };
+        c.dialogMap = new() {
+      {TalkState.TALK_SMACK, ("( ͡° ͜ʖ ͡°)", Resources.GetStream("Snd_Koolaid_Intro")) },
+      {TalkState.SAY_OW, ("", null) },
+      {TalkState.BONED, ("Ohhhhh nooooooooo", null) },
+      {TalkState.GUN_WENT_OFF, ("", Resources.GetStream("Snd_Koolaid_Death")) },
+      {TalkState.SURVIVED, ("", Resources.GetStream("Snd_Koolaid_Intro")) },
+    };
+        return c;
+    }
+    private static Character MakeBowOpponent() {
     Character c = new Character();
     c.Stats = new(luck: 0.0f, health: 100, reflex: 0.5f);
     c.imgMap = new() {
@@ -286,7 +307,28 @@ public class Character {
     };
     return c;
   }
-  private static Character MakeNerfRevolverPlayer() {
+    public static Character MakeSaberPlayer()
+    {
+        Character c = new Character();
+        c.Stats = new(luck: 0.5f, health: 100, reflex: 0.3f);
+
+
+        c.imgMap = new() {
+      {ImgState.IDLE, Resources.GetObject("Img_Bender_Idle") as Bitmap },
+      {ImgState.NO_WEAPON, Resources.GetObject("Img_Bender_Idle") as Bitmap },
+      {ImgState.READY, Resources.GetObject("Img_Bender_Ready_MagicWand") as Bitmap },
+      {ImgState.KILL, Resources.GetObject("Img_Bender_Kill_MagicWand") as Bitmap },
+    };
+        c.dialogMap = new() {
+      {TalkState.TALK_SMACK, ("Bite my shiny metal ass!", Resources.GetStream("Snd_Bender_BiteMyShinyMetalAss")) },
+      {TalkState.SAY_OW, ("Ow ow ow!!!", null) },
+      {TalkState.BONED, ("Oh, I'm boned!", Resources.GetStream("Snd_Bender_ImBoned")) },
+      {TalkState.GUN_WENT_OFF, ("Oh My God!", Resources.GetStream("Snd_Bender_OhMyGod")) },
+      {TalkState.SURVIVED, ("Hahahaha!", Resources.GetStream("Snd_Bender_Laugh")) },
+    };
+        return c;
+    }
+    private static Character MakeNerfRevolverPlayer() {
     Character c = new Character();
     c.Stats = new(luck: 0.2f, health: 101, reflex: 0.7f);
     c.imgMap = new() {
