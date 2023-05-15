@@ -283,6 +283,16 @@ namespace RRRPG.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Img_Koolaid_Death {
+            get {
+                object obj = ResourceManager.GetObject("Img_Koolaid_Death", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Img_Koolaid_Idle {
             get {
                 object obj = ResourceManager.GetObject("Img_Koolaid_Idle", resourceCulture);
@@ -303,9 +313,49 @@ namespace RRRPG.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Img_Luke_Death {
+            get {
+                object obj = ResourceManager.GetObject("Img_Luke_Death", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Img_Luke_Idle {
+            get {
+                object obj = ResourceManager.GetObject("Img_Luke_Idle", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Img_Luke_Ready {
+            get {
+                object obj = ResourceManager.GetObject("Img_Luke_Ready", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Img_Magic_Wand {
             get {
                 object obj = ResourceManager.GetObject("Img_Magic_Wand", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Img_Neo_Death {
+            get {
+                object obj = ResourceManager.GetObject("Img_Neo_Death", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
