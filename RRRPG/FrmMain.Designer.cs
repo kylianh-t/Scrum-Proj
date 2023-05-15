@@ -429,7 +429,7 @@
             Score.Font = new Font("Segoe UI", 16F, FontStyle.Bold, GraphicsUnit.Point);
             Score.ForeColor = Color.White;
             Score.Location = new Point(89, 9);
-            Score.MinimumSize = new Size(114, 0);
+            
             Score.Name = "Score";
             Score.Size = new Size(114, 30);
             Score.TabIndex = 13;
@@ -545,7 +545,7 @@
             label7.BackColor = Color.White;
             label7.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
             label7.Location = new Point(106, 695);
-            label7.MinimumSize = new Size(50, 0);
+            
             label7.Name = "label7";
             label7.Size = new Size(50, 32);
             label7.TabIndex = 26;
@@ -556,9 +556,9 @@
             // label8
             // 
             label8.BackColor = Color.White;
-            label8.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            label8.Font = new Font("Segoe UI", 10F, FontStyle.Bold, GraphicsUnit.Point);
             label8.Location = new Point(106, 730);
-            label8.MinimumSize = new Size(50, 0);
+            
             label8.Name = "label8";
             label8.Size = new Size(50, 32);
             label8.TabIndex = 27;
@@ -571,7 +571,7 @@
             label9.BackColor = Color.White;
             label9.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
             label9.Location = new Point(106, 768);
-            label9.MinimumSize = new Size(50, 0);
+            
             label9.Name = "label9";
             label9.Size = new Size(50, 32);
             label9.TabIndex = 28;
@@ -584,7 +584,7 @@
             label10.AutoSize = true;
             label10.BackColor = Color.DimGray;
             label10.Location = new Point(161, 695);
-            label10.MinimumSize = new Size(200, 32);
+            
             label10.Name = "label10";
             label10.Size = new Size(200, 32);
             label10.TabIndex = 29;
@@ -595,7 +595,7 @@
             label11.AutoSize = true;
             label11.BackColor = Color.DimGray;
             label11.Location = new Point(161, 766);
-            label11.MinimumSize = new Size(200, 32);
+            
             label11.Name = "label11";
             label11.Size = new Size(200, 32);
             label11.TabIndex = 30;
@@ -606,7 +606,7 @@
             label12.AutoSize = true;
             label12.BackColor = Color.DimGray;
             label12.Location = new Point(161, 729);
-            label12.MinimumSize = new Size(200, 32);
+            
             label12.Name = "label12";
             label12.Size = new Size(200, 32);
             label12.TabIndex = 31;
@@ -616,8 +616,7 @@
             // 
             label13.BackColor = Color.White;
             label13.Location = new Point(161, 695);
-            label13.MaximumSize = new Size(200, 32);
-            label13.MinimumSize = new Size(0, 32);
+            
             label13.Name = "label13";
             label13.Size = new Size(10, 32);
             label13.TabIndex = 32;
@@ -627,8 +626,8 @@
             // 
             label14.BackColor = Color.White;
             label14.Location = new Point(161, 730);
-            label14.MaximumSize = new Size(200, 32);
-            label14.MinimumSize = new Size(0, 32);
+            
+            
             label14.Name = "label14";
             label14.Size = new Size(10, 32);
             label14.TabIndex = 33;
@@ -638,8 +637,8 @@
             // 
             label15.BackColor = Color.White;
             label15.Location = new Point(161, 767);
-            label15.MaximumSize = new Size(200, 32);
-            label15.MinimumSize = new Size(0, 32);
+            
+            
             label15.Name = "label15";
             label15.Size = new Size(10, 32);
             label15.TabIndex = 34;
@@ -702,7 +701,7 @@
             // FrmMain
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
-            AutoScaleMode = AutoScaleMode.Font;
+            AutoScaleMode = AutoScaleMode.Inherit;
             BackColor = Color.Black;
             ClientSize = new Size(1085, 887);
             Controls.Add(volumeSlider);
